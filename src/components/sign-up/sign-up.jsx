@@ -75,7 +75,7 @@ class SignUp extends Component {
                         name='email'
                         value={email}
                         onChange={this.handleChange}
-                        label='email'
+                        label='E-mail'
                         required
                     />
                     <FormInput 

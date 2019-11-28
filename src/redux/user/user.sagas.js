@@ -18,6 +18,8 @@ import {
 	getCurrentUser
 } from '../../firebase/firebase.utils';
 
+// SIGN IN
+
 export function* getSnapshotFromUserAuth(userAuth, additionalData) {
 	try {
 		const userRef = yield call(
@@ -69,6 +71,8 @@ export function* signOut() {
 	}
 }
 
+// SIGN UP
+
 export function* signUp({ payload: { email, password, displayName } }) {
 	try {
 		const { user } = yield auth.createUserWithEmailAndPassword(email, password);
@@ -77,6 +81,8 @@ export function* signUp({ payload: { email, password, displayName } }) {
 		yield put(signUpFailure(error));
 	}
 }
+
+// SIGN IN LISTENERS
 
 export function* signInAfterSignUp({ payload: { user, additionalData } }) {
   	yield getSnapshotFromUserAuth(user, additionalData);
@@ -98,6 +104,8 @@ export function* onSignOutStart() {
   	yield takeLatest(UserActionTypes.SIGN_OUT_START, signOut);
 }
 
+//SIGN UP LISTENERS
+
 export function* onSignUpStart() {
   	yield takeLatest(UserActionTypes.SIGN_UP_START, signUp);
 }
@@ -105,6 +113,8 @@ export function* onSignUpStart() {
 export function* onSignUpSuccess() {
   	yield takeLatest(UserActionTypes.SIGN_UP_SUCCESS, signInAfterSignUp);
 }
+
+// USER SAGAS
 
 export function* userSagas() {
 	yield all([

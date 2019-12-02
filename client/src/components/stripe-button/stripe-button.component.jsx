@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import swal from 'sweetalert';
 
 import StripeCheckout from 'react-stripe-checkout';
 
@@ -16,12 +17,15 @@ const StripeCheckoutButton = ({ price }) => {
                 token: token
             },
         }).then(response => {
-            alert('Payment Successful!')
+            swal("Payment Successful!", "Your Products are on the way!", "success", {
+                button: "Continue",
+            });
         }).catch(error => {
             console.log('Payment Error:', error);
-            alert(
-                'There was an issue with your payment. Please use the provided credit card details'
-            );
+            swal("There was an issue with your payment", 
+                "Please use the provided card details", "error", {
+                button: "Continue",
+            });;
         })
     };
 

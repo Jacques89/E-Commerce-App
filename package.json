@@ -2,7 +2,7 @@
     "name": "thats-vinyl-server",
     "version": "1.0.0",
     "engines": {
-        "node": "10.2.0",
+        "node": "10.17.0",
         "npm": "6.13.1"
     },
     "scripts": {

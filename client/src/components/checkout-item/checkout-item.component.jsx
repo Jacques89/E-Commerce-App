@@ -29,7 +29,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
                 &#10005;
             </RemoveButtonContainer>
         </CheckoutItemContainer>
-    );
+  );
 };
 
 const mapDispatchToProps = dispatch => ({
@@ -38,4 +38,4 @@ const mapDispatchToProps = dispatch => ({
     removeItem: item => dispatch(removeItem(item))
 });
 
-export default connect( null, mapDispatchToProps)(CheckoutItem);
+export default connect(null, mapDispatchToProps)(CheckoutItem);

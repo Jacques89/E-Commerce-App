@@ -55,15 +55,15 @@ export const addCollectionAndDocuments = async (
     return await batch.commit();
     };
 
-    export const convertCollectionsSnapshotToMap = collections => {
+export const convertCollectionsSnapshotToMap = collections => {
     const transformedCollection = collections.docs.map(doc => {
         const { title, items } = doc.data();
 
         return {
-        routeName: encodeURI(title.toLowerCase()),
-        id: doc.id,
-        title,
-        items
+            routeName: encodeURI(title.toLowerCase()),
+            id: doc.id,
+            title,
+            items
         };
     });
 
@@ -76,8 +76,8 @@ export const addCollectionAndDocuments = async (
 export const getCurrentUser = () => {
     return new Promise((resolve, reject) => {
         const unsubscribe = auth.onAuthStateChanged(userAuth => {
-        unsubscribe();
-        resolve(userAuth);
+            unsubscribe();
+            resolve(userAuth);
         }, reject);
     });
 };

@@ -1,36 +1,36 @@
 const INITIAL_STATE = {
     sections: [
         {
-            title: 'hats',
-            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+            title: 'turntables',
+            imageUrl: 'https://i.ibb.co/7zmydWg/technics.jpg',
             id: 1,
-            linkUrl: 'shop/hats'
+            linkUrl: 'shop/turntables'
         },
         {
-            title: 'jackets',
-            imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+            title: 'CDJs',
+            imageUrl: 'https://i.ibb.co/B3RXrTt/CDJ.jpg',
             id: 2,
-            linkUrl: 'shop/jackets'
+            linkUrl: 'shop/cdj'
         },
         {
-            title: 'sneakers',
-            imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+            title: 'mixers',
+            imageUrl: 'https://i.ibb.co/ch3QKqN/DJ-mixer.jpg',
             id: 3,
-            linkUrl: 'shop/sneakers'
+            linkUrl: 'shop/mixers'
         },
         {
-            title: 'womens',
-            imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+            title: 'CDs',
+            imageUrl: 'https://i.ibb.co/jH99K30/CD-black.jpg',
             size: 'large',
             id: 4,
-            linkUrl: 'shop/womens'
+            linkUrl: 'shop/cd'
         },
         {
-            title: 'mens',
-            imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+            title: 'vinyl',
+            imageUrl: 'https://i.ibb.co/Njtr9Xt/alberto-bigoni-4-De-S5a-h-AM-unsplash.jpg',
             size: 'large',
             id: 5,
-            linkUrl: 'shop/mens'
+            linkUrl: 'shop/vinyl'
         }
     ]
 };

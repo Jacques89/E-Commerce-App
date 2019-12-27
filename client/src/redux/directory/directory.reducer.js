@@ -8,7 +8,7 @@ const INITIAL_STATE = {
         },
         {
             title: 'CDJs',
-            imageUrl: 'https://i.ibb.co/B3RXrTt/CDJ.jpg',
+            imageUrl: 'https://i.ibb.co/Wvg67TV/CDJ-black.png',
             id: 2,
             linkUrl: 'shop/cdj'
         },
@@ -20,7 +20,7 @@ const INITIAL_STATE = {
         },
         {
             title: 'CDs',
-            imageUrl: 'https://i.ibb.co/jH99K30/CD-black.jpg',
+            imageUrl: 'https://i.ibb.co/bWqXB4f/CD-black-1.png',
             size: 'large',
             id: 4,
             linkUrl: 'shop/cd'

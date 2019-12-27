@@ -8,7 +8,7 @@ const INITIAL_STATE = {
         },
         {
             title: 'CDJs',
-            imageUrl: 'https://i.ibb.co/Wvg67TV/CDJ-black.png',
+            imageUrl: 'https://i.ibb.co/L0JHBgd/CDJ-crop.jpg',
             id: 2,
             linkUrl: 'shop/cdj'
         },

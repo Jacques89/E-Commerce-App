@@ -2,7 +2,7 @@ const INITIAL_STATE = {
     sections: [
         {
             title: 'turntables',
-            imageUrl: 'https://i.ibb.co/7zmydWg/technics.jpg',
+            imageUrl: 'https://i.ibb.co/tcJBL9x/technics.png',
             id: 1,
             linkUrl: 'shop/turntables'
         },
@@ -14,7 +14,7 @@ const INITIAL_STATE = {
         },
         {
             title: 'mixers',
-            imageUrl: 'https://i.ibb.co/ch3QKqN/DJ-mixer.jpg',
+            imageUrl: 'https://i.ibb.co/BzmzcH0/DJ-mixer.png',
             id: 3,
             linkUrl: 'shop/mixers'
         },
@@ -27,7 +27,7 @@ const INITIAL_STATE = {
         },
         {
             title: 'vinyl',
-            imageUrl: 'https://i.ibb.co/Njtr9Xt/alberto-bigoni-4-De-S5a-h-AM-unsplash.jpg',
+            imageUrl: 'https://i.ibb.co/5YDRsPJ/vinyl.png',
             size: 'large',
             id: 5,
             linkUrl: 'shop/vinyl'

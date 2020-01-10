@@ -2,7 +2,7 @@ const INITIAL_STATE = {
     sections: [
         {
             title: 'turntables',
-            imageUrl: 'https://i.ibb.co/tcJBL9x/technics.png',
+            imageUrl: 'https://i.ibb.co/5jRKRDr/silver-vinyl.png',
             id: 1,
             linkUrl: 'shop/turntables'
         },

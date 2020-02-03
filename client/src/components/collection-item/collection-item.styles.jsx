@@ -22,6 +22,9 @@ export const CollectionItemContainer = styled.div`
 
     @media screen and (max-width: 800px) {
         width: 40vw;
+        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
 
         &:hover {
             .image {
@@ -46,7 +49,7 @@ export const AddButton = styled(CustomButton)`
         display: block;
         opacity: 0.9;
         min-width: unset;
-        padding: 0 10px;
+        padding: 0 10px 0 10px;
     }
 `;
 

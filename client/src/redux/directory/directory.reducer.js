@@ -19,11 +19,11 @@ const INITIAL_STATE = {
             linkUrl: 'shop/mixers'
         },
         {
-            title: 'CDs',
-            imageUrl: 'https://i.ibb.co/bWqXB4f/CD-black-1.png',
+            title: 'speakers',
+            imageUrl: 'https://i.ibb.co/1nM1VvS/speaker.png',
             size: 'large',
             id: 4,
-            linkUrl: 'shop/cd'
+            linkUrl: 'shop/speakers'
         },
         {
             title: 'vinyl',

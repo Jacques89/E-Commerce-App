@@ -65,12 +65,6 @@ describe('Header component', () => {
         });
     });
 
-    describe('if hidden is true', () => {
-        it('should not render CartDropdown', () => {
-            expect(wrapper.exists(CartDropdown)).toBe(false);
-        });
-    });
-
     describe('if currentUser is null', () => {
         it('should render CartDropdown', () => {
             const mockProps = {

@@ -1,4 +1,4 @@
-# Lesson-31
+# E-Commerce App
 We have separated out our front-end client from our back-end express server that handles our stripe charges. In this section we learn how to write our express backend server as well as syncing our client to request our backend to complete a stripe charge!
 
 # How to fork and clone
@@ -122,7 +122,7 @@ git push heroku master --force
 This will overwrite the existing Heroku app with our new code.
 
 
-## Open our Heroku project
+## Open the Heroku project
 
 After heroku finishes building our project, we can simply run:
 

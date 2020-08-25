@@ -12,7 +12,7 @@ describe('userReducer', () => {
     });
 
     it('should set currentUser to payload on signInSuccess action', () => {
-        const mockUser = { id: 1, displayName: 'Yihua' };
+        const mockUser = { id: 1, displayName: 'Jacques' };
 
         expect(
             userReducer(initialState, {

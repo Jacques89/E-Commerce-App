@@ -21,7 +21,7 @@
         "express": "^4.16.4",
         "express-sslify": "^1.2.0",
         "nodemon": "^2.0.4",
-        "stripe": "6.36.0",
+        "stripe": "^8.114.0",
         "sweetalert": "^2.1.2"
     },
     "devDependencies": {

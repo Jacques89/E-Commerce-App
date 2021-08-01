@@ -18,6 +18,7 @@
 /client/.env.production.local
  
 .env
+.env.local
  
 /client/npm-debug.log*
 node_modules

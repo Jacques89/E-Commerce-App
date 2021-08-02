@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import { ErrorImageContainer, ErrorImageOverlay, ErrorImageText } from './error-notice.styles';
+import { ErrorImageContainer, ErrorImageOverlay, ErrorImageText } from './error-notice.styles'
 
 class ErrorNotice extends Component {
     constructor() {
-        super();
+        super()
 
         this.state = {
             hasError: false
@@ -13,15 +13,15 @@ class ErrorNotice extends Component {
 
     static getDerivedStateFromError(error) {
         // process error
-        return {hasError: true};
+        return { hasError: true }
     }
 
     componentDidCatch(error, info) {
-        console.log(error);
+        console.log(error)
     }
 
     render() {
-        if(this.state.hasError) {
+        if (this.state.hasError) {
             return (
                 <ErrorImageOverlay>
                     <ErrorImageContainer imageUrl='https://i.imgur.com/hkRuanu.png' />
@@ -30,8 +30,8 @@ class ErrorNotice extends Component {
             )
         }
 
-        return this.props.children;
+        return this.props.children
     }
-};
+}
 
-export default ErrorNotice;
+export default ErrorNotice

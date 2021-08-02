@@ -1,34 +1,28 @@
-import React, { useEffect, lazy, Suspense } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import React, { useEffect, lazy, Suspense } from 'react'
+import { Switch, Route, Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { createStructuredSelector } from 'reselect'
 
-import Header from './components/header/header.component';
-import Spinner from './components/spinner/spinner.component';
-import ErrorNotice from './components/error-notice/error-notice.component';
+import Header from './components/header/header.component'
+import Spinner from './components/spinner/spinner.component'
+import ErrorNotice from './components/error-notice/error-notice.component'
 
-import { GlobalStyle } from './global.styles';
+import { GlobalStyle } from './global.styles'
 
-import { selectCurrentUser } from './redux/user/user.selectors';
-import { checkUserSession } from './redux/user/user.actions';
+import { selectCurrentUser } from './redux/user/user.selectors'
+import { checkUserSession } from './redux/user/user.actions'
 
-const HomePage = lazy(() => 
-    import('./pages/homepage/homepage.component')
-);
-const ShopPage = lazy(() => 
-    import('./pages/shop/shop.component')
-);
-const CheckoutPage = lazy(() => 
-    import('./pages/checkout/checkout.component')
-);
-const SignInAndSignUpPage = lazy(() => import(
-    './pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
-));
+const HomePage = lazy(() => import('./pages/homepage/homepage.component'))
+const ShopPage = lazy(() => import('./pages/shop/shop.component'))
+const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'))
+const SignInAndSignUpPage = lazy(() =>
+    import('./pages/sign-in-and-sign-up/sign-in-and-sign-up.component')
+)
 
 const App = ({ checkUserSession, currentUser }) => {
     useEffect(() => {
-        checkUserSession();
-    }, [checkUserSession]);
+        checkUserSession()
+    }, [checkUserSession])
 
     return (
         <div>
@@ -51,15 +45,15 @@ const App = ({ checkUserSession, currentUser }) => {
                 </ErrorNotice>
             </Switch>
         </div>
-    );
-};
+    )
+}
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser
-});
+})
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
     checkUserSession: () => dispatch(checkUserSession())
-});
+})
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App)

@@ -26,7 +26,7 @@ describe('fetch collections async saga', () => {
         expect(getCollection).toHaveBeenCalled()
     })
 
-    it('should call convertCollectionsSnapshot saga ', () => {
+    it('should call convertCollectionsSnapshot saga', () => {
         const mockSnapshot = {}
         expect(generator.next(mockSnapshot).value).toEqual(
             call(convertCollectionsSnapshotToMap, mockSnapshot)
@@ -37,7 +37,6 @@ describe('fetch collections async saga', () => {
         const mockCollectionsMap = {
             turntables: { id: 1 }
         }
-
         expect(generator.next(mockCollectionsMap).value).toEqual(
             put(fetchCollectionsSuccess(mockCollectionsMap))
         )
@@ -45,9 +44,18 @@ describe('fetch collections async saga', () => {
 
     it('should fire fetchCollectionsFailure if get collection fails at any point', () => {
         const newGenerator = fetchCollectionsAsync()
-        newGenerator.next()
-        expect(newGenerator.throw({ message: 'error' }).value).toEqual(
-            put(fetchCollectionsFailure('error'))
-        )
+        const error = {
+            '@@redux-saga/IO': true,
+            combinator: false,
+            payload: {
+                action: {
+                    payload: "Cannot read property 'get' of undefined",
+                    type: 'FETCH_COLLECTIONS_FAILURE'
+                },
+                channel: undefined
+            },
+            type: 'PUT'
+        }
+        expect(newGenerator.next().value).toMatchObject(error)
     })
 })

@@ -1,15 +1,15 @@
-import { runSaga } from 'redux-saga';
+import { runSaga } from 'redux-saga'
 
 export async function recordSaga(saga, initialAction) {
-    const dispatched = [];
+    const dispatched = []
 
     await runSaga(
         {
-        dispatch: action => dispatched.push(action)
+        	dispatch: (action) => dispatched.push(action)
         },
         saga,
         initialAction
-    ).done;
+    ).done
 
-  return dispatched;
+    return dispatched
 }

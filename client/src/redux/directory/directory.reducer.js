@@ -33,12 +33,13 @@ export const INITIAL_STATE = {
             linkUrl: 'shop/vinyl'
         }
     ]
-};
+}
 
 const directoryReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        default: return state;
+        default:
+            return state
     }
-};
+}
 
-export default directoryReducer;
+export default directoryReducer

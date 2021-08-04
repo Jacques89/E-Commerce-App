@@ -1,11 +1,11 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import React from 'react'
+import { connect } from 'react-redux'
+import { createStructuredSelector } from 'reselect'
 
-import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
-import CheckoutItem from '../../components/checkout-item/checkout-item.component';
+import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component'
+import CheckoutItem from '../../components/checkout-item/checkout-item.component'
 
-import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors';
+import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors'
 
 import {
     CheckoutPageContainer,
@@ -13,7 +13,7 @@ import {
     HeaderBlockContainer,
     TotalContainer,
     WarningContainer
-} from './checkout.styles';
+} from './checkout.styles'
 
 export const CheckoutPage = ({ cartItems, total }) => (
     <CheckoutPageContainer>
@@ -34,23 +34,22 @@ export const CheckoutPage = ({ cartItems, total }) => (
                 <span>Remove</span>
             </HeaderBlockContainer>
         </CheckoutHeaderContainer>
-
-        {cartItems.map(cartItem => (
+        {cartItems.map((cartItem) => (
             <CheckoutItem key={cartItem.id} cartItem={cartItem} />
         ))}
         <TotalContainer>TOTAL: {total}€</TotalContainer>
         <WarningContainer>
             *Please use the following test credit card for payments*
             <br />
-            4242 4242 4242 4242 - Exp: 06/26 - CVV: 123
+            4242 4242 4242 4242 - Exp: 01/25 - CVV: 123
         </WarningContainer>
         <StripeCheckoutButton price={total} />
     </CheckoutPageContainer>
-);
+)
 
 const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems,
     total: selectCartTotal
-});
+})
 
-export default connect(mapStateToProps)(CheckoutPage);
+export default connect(mapStateToProps)(CheckoutPage)

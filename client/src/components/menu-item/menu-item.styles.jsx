@@ -51,8 +51,8 @@ export const BackgroundImageContainer = styled.div`
 BackgroundImageContainer.displayName = 'BackgroundImageContainer'
 
 export const ContentContainer = styled.div`
-    height: 90px;
-    padding: 0 25px;
+    height: 6rem;
+    padding: 0 1.5625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +62,12 @@ export const ContentContainer = styled.div`
     opacity: 0.7;
     position: absolute;
 
+    @media screen and (max-width: 563px) {
+        padding: 0 0.625rem;
+    }
+
     @media screen and (max-width: 350px) {
-        padding: 0 15px;
+        padding: 0 	0.9375rem;
     }
 `
 

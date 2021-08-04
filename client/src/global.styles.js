@@ -14,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: black;
     }
+
+    :root {
+        font-size: 16px;
+    }
     
     * {
         box-sizing: border-box;

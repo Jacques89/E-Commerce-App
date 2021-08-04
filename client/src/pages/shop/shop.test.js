@@ -1,25 +1,25 @@
-import React from 'react';
-import { mount } from 'enzyme';
-import { combineReducers, createStore } from 'redux';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import React from 'react'
+import { mount } from 'enzyme'
+import { combineReducers, createStore } from 'redux'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
 
-import { ShopPage } from './shop.component';
+import { ShopPage } from './shop.component'
 
 export const createMockStore = ({ state, reducers }) => {
-  const store = createStore(combineReducers(reducers), state);
-  return {
-    ...store,
-    persistor: {
-      persist: () => null
+    const store = createStore(combineReducers(reducers), state)
+    return {
+        ...store,
+        persistor: {
+            persist: () => null
+        }
     }
-  };
-};
+}
 
 describe('ShopPage', () => {
-    let wrapper;
-    let mockFetchCollectionsStart;
-    let store;
+    let wrapper
+    let mockFetchCollectionsStart
+    let store
 
     beforeEach(() => {
         const mockReducer = (
@@ -27,29 +27,29 @@ describe('ShopPage', () => {
                 isFetching: true
             },
             action
-        ) => state;
+        ) => state
 
         const mockState = {
             shop: {
                 isFetching: true
             }
-        };
+        }
 
-        mockFetchCollectionsStart = jest.fn();
+        mockFetchCollectionsStart = jest.fn()
 
         store = createMockStore({
             state: mockState,
             reducers: { shop: mockReducer }
-        });
+        })
 
         const mockMatch = {
             path: ''
-        };
+        }
 
         const mockProps = {
             match: mockMatch,
             fetchCollectionsStart: mockFetchCollectionsStart
-        };
+        }
 
         wrapper = mount(
             <BrowserRouter>
@@ -57,14 +57,14 @@ describe('ShopPage', () => {
                     <ShopPage {...mockProps} />
                 </Provider>
             </BrowserRouter>
-        );
-    });
+        )
+    })
 
     it('should render ShopPage component', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
+        expect(wrapper).toMatchSnapshot()
+    })
 
     it('should render ShopPage component', () => {
-        expect(mockFetchCollectionsStart).toHaveBeenCalled();
-    });
-});
+        expect(mockFetchCollectionsStart).toHaveBeenCalled()
+    })
+})

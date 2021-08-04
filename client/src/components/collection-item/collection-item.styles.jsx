@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import CustomButton from '../custom-button/custom-button.component';
+import styled from 'styled-components'
+import CustomButton from '../custom-button/custom-button.component'
 
 export const CollectionItemContainer = styled.div`
     width: 22vw;
@@ -22,7 +22,7 @@ export const CollectionItemContainer = styled.div`
 
     @media screen and (max-width: 800px) {
         width: 40vw;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         display: flex;
         justify-content: space-between;
 
@@ -30,13 +30,13 @@ export const CollectionItemContainer = styled.div`
             .image {
                 opacity: unset;
             }
-    
+
             button {
                 opacity: unset;
             }
         }
     }
-`;
+`
 
 export const AddButton = styled(CustomButton)`
     width: 80%;
@@ -49,11 +49,12 @@ export const AddButton = styled(CustomButton)`
         display: block;
         opacity: 0.9;
         min-width: unset;
+        top: 219px;
         padding: 0 10px 0 10px;
     }
-`;
+`
 
-AddButton.displayName = 'AddButton';
+AddButton.displayName = 'AddButton'
 
 export const BackgroundImage = styled.div`
     width: 100%;
@@ -62,9 +63,14 @@ export const BackgroundImage = styled.div`
     background-position: center;
     margin-bottom: 5px;
     background-image: ${({ imageUrl }) => `url(${imageUrl})`};
-`;
 
-BackgroundImage.displayName = 'BackgroundImage';
+    @media screen and (max-width: 800px) {
+        width: 80vw;
+        height: 95%;
+    }
+`
+
+BackgroundImage.displayName = 'BackgroundImage'
 
 export const CollectionFooterContainer = styled.div`
     width: 100%;
@@ -72,19 +78,25 @@ export const CollectionFooterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-`;
 
-CollectionFooterContainer.displayName = 'CollectionFooterContainer';
+    @media screen and (max-width: 800px) {
+        width: 80vw;
+        height: 20%;
+        font-size: 36px;
+    }
+`
+
+CollectionFooterContainer.displayName = 'CollectionFooterContainer'
 
 export const NameContainer = styled.span`
     width: 90%;
     margin-bottom: 15px;
-`;
+`
 
-NameContainer.displayName = 'NameContainer';
+NameContainer.displayName = 'NameContainer'
 
 export const PriceContainer = styled.span`
     text-align: right;
-`;
+`
 
-PriceContainer.displayName = 'PriceContainer';
+PriceContainer.displayName = 'PriceContainer'

@@ -1,15 +1,15 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from 'react'
+import { shallow } from 'enzyme'
 
-import { Header } from './header.component';
-import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import { Header } from './header.component'
+import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 
 describe('Header component', () => {
-    let wrapper;
-    let mockSignOutStart;
+    let wrapper
+    let mockSignOutStart
 
     beforeEach(() => {
-        mockSignOutStart = jest.fn();
+        mockSignOutStart = jest.fn()
 
         const mockProps = {
             hidden: true,
@@ -17,34 +17,26 @@ describe('Header component', () => {
                 uid: '123'
             },
             signOutStart: mockSignOutStart
-        };
+        }
 
-        wrapper = shallow(<Header {...mockProps} />);
-    });
+        wrapper = shallow(<Header {...mockProps} />)
+    })
 
     it('should render FormInput component', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
+        expect(wrapper).toMatchSnapshot()
+    })
 
     describe('if currentUser is present', () => {
         it('should render sign out link', () => {
-            expect(
-                wrapper
-                .find('OptionLink')
-                .at(1)
-                .text()
-            ).toBe('SIGN OUT');
-        });
+            expect(wrapper.find('OptionLink').at(1).text()).toBe('SIGN OUT')
+        })
 
         it('should call signOutStart method when link is clicked', () => {
-            wrapper
-            .find('OptionLink')
-            .at(1)
-            .simulate('click');
+            wrapper.find('OptionLink').at(1).simulate('click')
 
-            expect(mockSignOutStart).toHaveBeenCalled();
-        });
-    });
+            expect(mockSignOutStart).toHaveBeenCalled()
+        })
+    })
 
     describe('if currentUser is null', () => {
         it('should render sign in link', () => {
@@ -52,18 +44,13 @@ describe('Header component', () => {
                 hidden: true,
                 currentUser: null,
                 signOutStart: mockSignOutStart
-            };
+            }
 
-            const newWrapper = shallow(<Header {...mockProps} />);
+            const newWrapper = shallow(<Header {...mockProps} />)
 
-            expect(
-                newWrapper
-                .find('OptionLink')
-                .at(1)
-                .text()
-            ).toBe('SIGN IN');
-        });
-    });
+            expect(newWrapper.find('OptionLink').at(1).text()).toBe('SIGN IN')
+        })
+    })
 
     describe('if currentUser is null', () => {
         it('should render CartDropdown', () => {
@@ -71,11 +58,11 @@ describe('Header component', () => {
                 hidden: false,
                 currentUser: null,
                 signOutStart: mockSignOutStart
-            };
+            }
 
-            const newWrapper = shallow(<Header {...mockProps} />);
+            const newWrapper = shallow(<Header {...mockProps} />)
 
-            expect(newWrapper.exists(CartDropdown)).toBe(true);
-        });
-    });
-});
+            expect(newWrapper.exists(CartDropdown)).toBe(true)
+        })
+    })
+})

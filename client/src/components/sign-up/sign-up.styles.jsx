@@ -8,6 +8,10 @@ export const SignUpContainer = styled.div`
     @media screen and (max-width: 800px) {
         width: 100%;
     }
+
+    @media screen and (max-width: 920px) {
+        padding-right: 2.8rem;
+    }
 `
 
 export const SignUpTitle = styled.h2`

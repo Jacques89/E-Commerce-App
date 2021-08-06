@@ -8,21 +8,21 @@ export const CollectionPageContainer = styled.div`
 `
 
 export const CollectionTitle = styled.h2`
-    font-size: 38px;
-    margin: 0 auto 30px;
+    font-size: 2.375rem;
+    margin: 0 auto 1.875rem;
 `
 
 export const CollectionItemsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 0.938rem;
     & > div {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     @media screen and (max-width: 800px) {
         grid-template-columns: 1fr;
-        grid-gap: 15px;
+        grid-gap: 0.938rem;
         width: 40%;
     }
 `

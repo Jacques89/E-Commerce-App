@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CollectionPreviewContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 
     @media screen and (max-width: 800px) {
         align-items: center;
@@ -11,8 +11,8 @@ export const CollectionPreviewContainer = styled.div`
 `
 
 export const TitleContainer = styled.h1`
-    font-size: 28px;
-    margin-bottom: 25px;
+    font-size: 1.75rem;
+    margin-bottom: 1.563rem;
     cursor: pointer;
 
     &:hover {
@@ -28,7 +28,7 @@ export const PreviewContainer = styled.div`
 
     @media screen and (max-width: 800px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
+        grid-template-columns: 1fr;
+        grid-gap: 0.938rem;
     }
 `

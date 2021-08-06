@@ -77,7 +77,7 @@ export const CollectionFooterContainer = styled.div`
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.125rem;
+    font-size: 1.4rem;
 
     @media screen and (max-width: 800px) {
         width: 80vw;

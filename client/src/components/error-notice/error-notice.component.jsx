@@ -1,36 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { ErrorImageContainer, ErrorImageOverlay, ErrorImageText } from './error-notice.styles'
 
-import { ErrorImageOverlay, ErrorImageContainer, ErrorImageText } from './error-notice.styles'
-
-class ErrorNotice extends React.Component {
-    constructor() {
-        super()
-
-        this.state = {
-            hasErrored: false
-        }
+class ErrorNotice extends Component {
+    state = {
+        hasError: false
     }
 
     static getDerivedStateFromError(error) {
-        // process the error
-        return { hasErrored: true }
+        // Process the errors
+
+        // Setting local state
+        return {
+            hasError: true
+        }
     }
 
     componentDidCatch(error, info) {
-        console.log(error)
+        console.error(error, info)
     }
 
     render() {
-        if (this.state.hasErrored) {
-            return (
-                <ErrorImageOverlay>
-                    <ErrorImageContainer imageUrl='https://i.imgur.com/yW2W9SC.png' />
-                    <ErrorImageText>Sorry this page is broken</ErrorImageText>
-                </ErrorImageOverlay>
-            )
-        }
-
-        return this.props.children
+        return this.state.hasError ? (
+            <ErrorImageOverlay>
+                <ErrorImageContainer imageUrl='https://i.imgur.com/yW2W9SC.png' />
+                <ErrorImageText>Sorry this page is broken 😥</ErrorImageText>
+            </ErrorImageOverlay>
+        ) : (
+            this.props.children
+        )
     }
 }
 

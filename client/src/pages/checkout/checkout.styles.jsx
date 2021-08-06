@@ -6,10 +6,10 @@ export const CheckoutPageContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px auto 0;
+    margin: 3.125rem auto 0;
     button {
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
     @media screen and (max-width: 800px) {
         width: 90%;
@@ -18,10 +18,10 @@ export const CheckoutPageContainer = styled.div`
 
 export const CheckoutHeaderContainer = styled.div`
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid darkgrey;
+    border-bottom: 0.063rem solid darkgrey;
 `
 
 export const HeaderBlockContainer = styled.div`
@@ -39,14 +39,14 @@ export const HeaderBlockContainer = styled.div`
 `
 
 export const TotalContainer = styled.div`
-    margin-top: 30px;
+    margin-top: 1.875rem;
     margin-left: auto;
-    font-size: 36px;
+    font-size: 2.25rem;
 `
 
 export const WarningContainer = styled.div`
     text-align: center;
-    margin-top: 40px;
-    font-size: 24px;
+    margin-top: 2.5rem;
+    font-size: 0.15rem;
     color: red;
 `

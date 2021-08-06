@@ -8,14 +8,16 @@ const buttonStyles = css`
     &:hover {
         background-color: white;
         color: black;
-        border: 1px solid black;
+        border: 0.063rem solid black;
     }
+
+
 `
 
 const invertedButtonStyles = css`
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 0.063rem solid black;
 
     &:hover {
         background-color: black;
@@ -44,13 +46,13 @@ const getButtonStyles = (props) => {
 }
 
 export const CustomButtonContainer = styled.button`
-    min-width: 165px;
+    min-width: 10.313rem;
     width: auto;
-    height: 50px;
-    letter-spacing: 0.5px;
-    line-height: 50px;
-    padding: 0 35px 0 35px;
-    font-size: 15px;
+    height: 3.125rem;
+    letter-spacing: 0.031rem;
+    line-height: 3.125rem;
+    padding: 0 2.188rem 0 2.188rem;
+    font-size: 0.938rem;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed';
     font-weight: bolder;

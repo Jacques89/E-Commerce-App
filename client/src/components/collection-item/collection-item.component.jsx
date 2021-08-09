@@ -1,36 +1,42 @@
 import React from 'react'
-import { connect } from 'react-redux'
-
-import { addItem } from '../../redux/cart/cart.actions'
+import { withRouter } from 'react-router-dom'
 
 import {
-    CollectionItemContainer,
-    CollectionFooterContainer,
+    CollectionItemDiv,
+    CollectionFooterDiv,
     AddButton,
     BackgroundImage,
-    NameContainer,
-    PriceContainer
+    NameSpan,
+    PriceSpan
 } from './collection-item.styles'
 
-export const CollectionItem = ({ item, addItem }) => {
-    const { name, price, imageUrl } = item
+const CollectionItem = ({ item, addItem, history, match, routeName }) => {
+    const { id, name, price, imageUrl } = item
 
     return (
-        <CollectionItemContainer>
-            <BackgroundImage className='image' imageUrl={imageUrl} />
-            <CollectionFooterContainer>
-                <NameContainer>{name}</NameContainer>
-                <PriceContainer>{price}€</PriceContainer>
-            </CollectionFooterContainer>
+        <CollectionItemDiv>
+            <BackgroundImage
+                className='image'
+                imageUrl={imageUrl}
+                onClick={() => {
+                    if (match.url === '/shop') {
+                        history.push(`${match.url}/${routeName}/${id}`)
+                    } else if (Number.isNaN(parseInt(match.url.slice(-1)))) {
+                        history.push(`${match.url}/${id}`)
+                    } else {
+                        history.push(`/shop/${routeName}/${id}`)
+                    }
+                }}
+            />
+            <CollectionFooterDiv>
+                <NameSpan>{name}</NameSpan>
+                <PriceSpan>{price}€</PriceSpan>
+            </CollectionFooterDiv>
             <AddButton onClick={() => addItem(item)} inverted>
                 Add to cart
             </AddButton>
-        </CollectionItemContainer>
+        </CollectionItemDiv>
     )
 }
 
-const mapDispatchToProps = (dispatch) => ({
-    addItem: (item) => dispatch(addItem(item))
-})
-
-export default connect(null, mapDispatchToProps)(CollectionItem)
+export default withRouter(CollectionItem)

@@ -1,19 +1,20 @@
 import styled from 'styled-components'
 import CustomButton from '../custom-button/custom-button.component'
 
-export const CollectionItemContainer = styled.div`
+export const CollectionItemDiv = styled.div`
     width: 22vw;
     display: flex;
     flex-direction: column;
     height: 21.875rem;
     align-items: center;
     position: relative;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
 
     &:hover {
         .image {
             opacity: 0.8;
         }
-
         button {
             opacity: 0.85;
             display: flex;
@@ -22,21 +23,18 @@ export const CollectionItemContainer = styled.div`
 
     @media screen and (max-width: 800px) {
         width: 40vw;
-        grid-template-columns: 1fr;
-        display: flex;
-        justify-content: space-between;
 
         &:hover {
             .image {
                 opacity: unset;
             }
-
             button {
                 opacity: unset;
             }
         }
     }
 `
+CollectionItemDiv.displayName = 'CollectionItemStyles'
 
 export const AddButton = styled(CustomButton)`
     width: 80%;
@@ -49,12 +47,10 @@ export const AddButton = styled(CustomButton)`
         display: block;
         opacity: 0.9;
         min-width: unset;
-        top: 13.688rem;
-        padding: 0 0.625rem 0 0.625rem;
+        padding: 0 0.625rem;
     }
 `
-
-AddButton.displayName = 'AddButton'
+AddButton.displayName = 'AddButtonStyles'
 
 export const BackgroundImage = styled.div`
     width: 100%;
@@ -63,40 +59,26 @@ export const BackgroundImage = styled.div`
     background-position: center;
     margin-bottom: 0.313rem;
     background-image: ${({ imageUrl }) => `url(${imageUrl})`};
-
-    @media screen and (max-width: 800px) {
-        width: 80vw;
-        height: 95%;
-    }
 `
+BackgroundImage.displayName = 'BackgroundImageStyles'
 
-BackgroundImage.displayName = 'BackgroundImage'
-
-export const CollectionFooterContainer = styled.div`
+export const CollectionFooterDiv = styled.div`
     width: 100%;
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.4rem;
-
-    @media screen and (max-width: 800px) {
-        width: 80vw;
-        height: 20%;
-        font-size: 2.25rem;
-    }
+    font-size: 1.125rem;
 `
+CollectionFooterDiv.displayName = 'CollectionFooterStyles'
 
-CollectionFooterContainer.displayName = 'CollectionFooterContainer'
-
-export const NameContainer = styled.span`
+export const NameSpan = styled.span`
     width: 90%;
     margin-bottom: 0.938rem;
 `
+NameSpan.displayName = 'NameSpanStyles'
 
-NameContainer.displayName = 'NameContainer'
-
-export const PriceContainer = styled.span`
+export const PriceSpan = styled.span`
+    width: 10%;
     text-align: right;
 `
-
-PriceContainer.displayName = 'PriceContainer'
+PriceSpan.displayName = 'PriceSpanStyles'

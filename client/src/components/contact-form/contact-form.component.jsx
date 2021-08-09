@@ -19,7 +19,7 @@ const ContactForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
         swal(`
-        ${name}, your message has been delivered!
+        ${name}, your message has been sent!
         
         We will be in touch, Thank You`)
 

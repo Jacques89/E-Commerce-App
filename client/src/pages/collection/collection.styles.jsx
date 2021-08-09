@@ -12,7 +12,7 @@ export const CollectionTitle = styled.h2`
     margin: 0 auto 1.875rem;
 `
 
-export const CollectionItemsContainer = styled.div`
+export const CollectionItemsDiv = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0.938rem;
@@ -27,4 +27,4 @@ export const CollectionItemsContainer = styled.div`
     }
 `
 
-CollectionItemsContainer.displayName = 'CollectionItemsContainer'
+CollectionItemsDiv.displayName = 'CollectionItemsContainer'

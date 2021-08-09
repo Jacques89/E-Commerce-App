@@ -28,11 +28,11 @@ describe('Header component', () => {
 
     describe('if currentUser is present', () => {
         it('should render sign out link', () => {
-            expect(wrapper.find('OptionLink').at(1).text()).toBe('SIGN OUT')
+            expect(wrapper.find('OptionLink').at(2).text()).toBe('SIGN OUT')
         })
 
         it('should call signOutStart method when link is clicked', () => {
-            wrapper.find('OptionLink').at(1).simulate('click')
+            wrapper.find('OptionLink').at(2).simulate('click')
 
             expect(mockSignOutStart).toHaveBeenCalled()
         })
@@ -48,11 +48,8 @@ describe('Header component', () => {
 
             const newWrapper = shallow(<Header {...mockProps} />)
 
-            expect(newWrapper.find('OptionLink').at(1).text()).toBe('SIGN IN')
+            expect(newWrapper.find('OptionLink').at(2).text()).toBe('SIGN IN')
         })
-    })
-
-    describe('if currentUser is null', () => {
         it('should render CartDropdown', () => {
             const mockProps = {
                 hidden: false,

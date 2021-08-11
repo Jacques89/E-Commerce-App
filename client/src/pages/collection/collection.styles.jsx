@@ -27,4 +27,4 @@ export const CollectionItemsDiv = styled.div`
     }
 `
 
-CollectionItemsDiv.displayName = 'CollectionItemsContainer'
+CollectionItemsDiv.displayName = 'CollectionItemsStyle'

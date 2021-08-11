@@ -63,8 +63,7 @@ describe('ShopPage', () => {
     it('should render ShopPage component', () => {
         expect(wrapper).toMatchSnapshot()
     })
-
-    it('should render ShopPage component', () => {
+    it('should call mockFetchCollectionsStart', () => {
         expect(mockFetchCollectionsStart).toHaveBeenCalled()
     })
 })

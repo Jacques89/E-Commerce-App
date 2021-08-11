@@ -1,5 +1,9 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
+import { Provider } from 'react-redux'
+import configureMockStore from 'redux-mock-store'
+
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import { CollectionItem } from './collection-item.component'
 
@@ -7,8 +11,11 @@ describe('CollectionItem component', () => {
     let wrapper
     let mockAddItem
     const imageUrl = 'www.testImage.com'
-    const mockName = 'black hat'
+    const mockName = 'blackCDJ'
     const mockPrice = 10
+
+    const mockStore = configureMockStore()
+    const store = mockStore({})
 
     beforeEach(() => {
         mockAddItem = jest.fn()
@@ -22,7 +29,13 @@ describe('CollectionItem component', () => {
             addItem: mockAddItem
         }
 
-        wrapper = shallow(<CollectionItem {...mockProps} />)
+        wrapper = shallow(
+            <Provider store={store}>
+                <Router>
+                    <CollectionItem {...mockProps} />
+                </Router>
+            </Provider>
+        )
     })
 
     it('should render CollectionItem component', () => {
@@ -31,7 +44,7 @@ describe('CollectionItem component', () => {
 
     it('should call addItem when AddButton clicked', () => {
         wrapper.find('AddButton').simulate('click')
-
+        console.log(wrapper.html())
         expect(mockAddItem).toHaveBeenCalled()
     })
 
@@ -39,12 +52,12 @@ describe('CollectionItem component', () => {
         expect(wrapper.find('BackgroundImage').prop('imageUrl')).toBe(imageUrl)
     })
 
-    it('should render name prop in NameContainer', () => {
-        expect(wrapper.find('NameContainer').text()).toBe(mockName)
+    it('should render name prop in NameSpan', () => {
+        expect(wrapper.find('NameSpan').dive().text()).toBe(mockName)
     })
 
-    it('should render price prop in PriceContainer', () => {
-        const price = parseInt(wrapper.find('PriceContainer').text())
+    it('should render price prop in PriceSpan', () => {
+        const price = parseInt(wrapper.find('PriceSpan').dive().text())
         expect(price).toBe(mockPrice)
     })
 })

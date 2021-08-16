@@ -22,7 +22,7 @@ export const Title = styled.h1`
     }
 `
 
-Title.displayName = 'TitleContainer'
+Title.displayName = 'TitleStyles'
 
 export const PreviewDiv = styled.div`
     display: flex;

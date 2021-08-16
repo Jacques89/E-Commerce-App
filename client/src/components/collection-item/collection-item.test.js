@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount, shallow } from 'enzyme'
+import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
 import configureMockStore from 'redux-mock-store'
 
@@ -29,10 +29,10 @@ describe('CollectionItem component', () => {
             addItem: mockAddItem
         }
 
-        wrapper = shallow(
+        wrapper = mount(
             <Provider store={store}>
                 <Router>
-                    <CollectionItem {...mockProps} />
+                    <CollectionItem item={mockProps.item} addItem={mockProps.addItem} />
                 </Router>
             </Provider>
         )
@@ -43,21 +43,20 @@ describe('CollectionItem component', () => {
     })
 
     it('should call addItem when AddButton clicked', () => {
-        wrapper.find('AddButton').simulate('click')
-        console.log(wrapper.html())
+        wrapper.find('AddButtonStyles').simulate('click')
         expect(mockAddItem).toHaveBeenCalled()
     })
 
     it('should render imageUrl as a prop on BackgroundImage', () => {
-        expect(wrapper.find('BackgroundImage').prop('imageUrl')).toBe(imageUrl)
+        expect(wrapper.find('BackgroundImageStyles').prop('imageUrl')).toBe(imageUrl)
     })
 
     it('should render name prop in NameSpan', () => {
-        expect(wrapper.find('NameSpan').dive().text()).toBe(mockName)
+        expect(wrapper.find('NameSpanStyles').text()).toBe(mockName)
     })
 
     it('should render price prop in PriceSpan', () => {
-        const price = parseInt(wrapper.find('PriceSpan').dive().text())
+        const price = parseInt(wrapper.find('PriceSpanStyles').text())
         expect(price).toBe(mockPrice)
     })
 })

@@ -21,7 +21,13 @@ export const CollectionItemsDiv = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.938rem;
+        width: 83%;
+    }
+
+    @media screen and (max-width: 554px) {
+        grid-template-columns: 1fr ;
         grid-gap: 0.938rem;
         width: 40%;
     }

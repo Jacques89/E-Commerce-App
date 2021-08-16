@@ -10,7 +10,7 @@ export const CollectionPreviewDiv = styled.div`
         align-items: center;
     }
 `
-CollectionPreviewDiv.displayName = 'CollectionPreviewStyles';
+CollectionPreviewDiv.displayName = 'CollectionPreviewStyles'
 
 export const Title = styled.h1`
     font-size: 1.75rem;
@@ -34,4 +34,4 @@ export const PreviewDiv = styled.div`
         grid-gap: 0.938rem;
     }
 `
-PreviewDiv.displayName = 'PreviewStyles';
+PreviewDiv.displayName = 'PreviewStyles'

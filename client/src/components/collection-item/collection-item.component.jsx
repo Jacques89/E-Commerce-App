@@ -12,6 +12,7 @@ import {
 
 export const CollectionItem = ({ item, addItem, history, match, routeName }) => {
     const { id, name, price, imageUrl } = item
+    
 
     return (
         <CollectionItemDiv>

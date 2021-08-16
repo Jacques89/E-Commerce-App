@@ -35,6 +35,5 @@ describe('CollectionPage', () => {
 
     it('should render the same number of CollectionItems as collection array', () => {
         expect(wrapper.find(CollectionItem).length).toBe(mockItems.length)
-        console.log(mockItems)
     })
 })

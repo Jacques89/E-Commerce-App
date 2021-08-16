@@ -15,7 +15,7 @@ describe('fetchCollectionsStart action', () => {
 describe('fetchCollectionsSuccess action', () => {
     it('should create the fetchCollectionsSuccess action', () => {
         const mockCollectionsMap = {
-            hats: {
+            vinyl: {
                 id: 1
             }
         }

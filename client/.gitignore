@@ -1,1 +1,5 @@
 node_modules
+firebase.rules
+firestore.indexes.json
+.firebaserc
+firebase.json

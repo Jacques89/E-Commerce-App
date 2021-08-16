@@ -33,6 +33,19 @@ export const CollectionItemDiv = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 554px) {
+        width: 40vw;
+        display: flex;
+        &:hover {
+            .image {
+                opacity: unset;
+            }
+            button {
+                opacity: unset;
+            }
+        }
+    }
 `
 CollectionItemDiv.displayName = 'CollectionItemStyles'
 
@@ -59,6 +72,10 @@ export const BackgroundImage = styled.div`
     background-position: center;
     margin-bottom: 0.313rem;
     background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+
+    @media screen and (max-width: 554px) {
+        width: 200%
+    }
 `
 BackgroundImage.displayName = 'BackgroundImageStyles'
 
@@ -68,6 +85,10 @@ export const CollectionFooterDiv = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 1.125rem;
+
+    @media screen and (max-width: 554px) {
+        width: 200%
+    }
 `
 CollectionFooterDiv.displayName = 'CollectionFooterStyles'
 

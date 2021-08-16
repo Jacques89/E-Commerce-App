@@ -6,7 +6,7 @@ describe('CollectionPreview Component Tests', () => {
     let wrapper
     let mockHistory
     let mockMatch
-    let mockRouteName = 'hats'
+    let mockRouteName = 'vinyl'
     let mockItem
 
     beforeEach(() => {
@@ -26,11 +26,11 @@ describe('CollectionPreview Component Tests', () => {
         }
 
         const mockProps = {
-            title: 'hats',
+            title: 'vinyl',
             items: [mockItem],
             history: mockHistory,
             match: mockMatch,
-            routeName: 'hats'
+            routeName: 'vinyl'
         }
 
         wrapper = shallow(<CollectionPreviewDiv.WrappedComponent {...mockProps} />)

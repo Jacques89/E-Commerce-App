@@ -44,7 +44,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test -u --env=jsdom --watchAll --detectOpenHandles CI=true",
+        "test": "react-scripts test -u --env=jsdom --detectOpenHandles",
         "coverage": "react-scripts test --detectOpenHandles --env=jsdom --watchAll=false --coverage",
         "eject": "react-scripts eject"
     },

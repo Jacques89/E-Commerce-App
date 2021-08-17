@@ -2,21 +2,9 @@ import { takeLatest, put, call } from 'redux-saga/effects'
 
 import UserActionTypes from './user.types'
 
-import {
-    signInSuccess,
-    signInFailure,
-    signOutSuccess,
-    signOutFailure,
-    signUpSuccess,
-    signUpFailure
-} from './user.actions'
+import { signInFailure, signOutSuccess, signOutFailure } from './user.actions'
 
-import {
-    auth,
-    googleProvider,
-    createUserProfileDocument,
-    getCurrentUser
-} from '../../firebase/firebase.utils'
+import { auth, createUserProfileDocument, getCurrentUser } from '../../firebase/firebase.utils'
 
 import {
     getSnapshotFromUserAuth,
@@ -51,7 +39,7 @@ describe('on signup start saga', () => {
 })
 
 describe('on signout start saga', () => {
-    it('should trigger on SIGN_UP_START', () => {
+    it('should trigger on SIGN_OUT_START', () => {
         const generator = onSignOutStart()
         expect(generator.next().value).toEqual(takeLatest(UserActionTypes.SIGN_OUT_START, signOut))
     })

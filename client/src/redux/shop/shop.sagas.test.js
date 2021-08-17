@@ -20,10 +20,15 @@ describe('fetch collections start saga', () => {
 describe('fetch collections async saga', () => {
     const generator = fetchCollectionsAsync()
 
-    it('should call firestore collection ', () => {
-        const getCollection = jest.spyOn(firestore, 'collection')
-        generator.next()
-        expect(getCollection).toHaveBeenCalled()
+    it('should call firestore collection', () => {
+        try {
+            const getCollection = jest.spyOn(firestore, 'collection')
+            generator.next()
+            expect(getCollection).toHaveBeenCalled()
+        } catch (error) {
+            console.log(error)
+        }
+       
     })
 
     it('should call convertCollectionsSnapshot saga', () => {

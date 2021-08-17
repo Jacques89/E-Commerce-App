@@ -46,7 +46,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test --watchAll --runInBand",
+        "test": "react-scripts test --watchAll --detectOpenHandles --forceExit",
         "coverage": "react-scripts test --detectOpenHandles --env=jsdom --watchAll=false --coverage",
         "eject": "react-scripts eject"
     },

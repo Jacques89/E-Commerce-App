@@ -10,7 +10,7 @@ import {
     PriceSpan
 } from './collection-item.styles'
 
-const CollectionItem = ({ item, addItem, history, match, routeName }) => {
+export const CollectionItem = ({ item, addItem, history, match, routeName }) => {
     const { id, name, price, imageUrl } = item
     
 

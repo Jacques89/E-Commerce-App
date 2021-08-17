@@ -10,7 +10,7 @@ export const CollectionPreviewDiv = styled.div`
         align-items: center;
     }
 `
-CollectionPreviewDiv.displayName = 'CollectionPreviewStyles';
+CollectionPreviewDiv.displayName = 'CollectionPreviewStyles'
 
 export const Title = styled.h1`
     font-size: 1.75rem;
@@ -22,7 +22,7 @@ export const Title = styled.h1`
     }
 `
 
-Title.displayName = 'TitleContainer'
+Title.displayName = 'TitleStyles'
 
 export const PreviewDiv = styled.div`
     display: flex;
@@ -30,8 +30,14 @@ export const PreviewDiv = styled.div`
 
     @media screen and (max-width: 800px) {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.938rem;
+    }
+
+    @media screen and (max-width: 554px) {
+        display: grid;
         grid-template-columns: 1fr;
         grid-gap: 0.938rem;
     }
 `
-PreviewDiv.displayName = 'PreviewStyles';
+PreviewDiv.displayName = 'PreviewStyles'

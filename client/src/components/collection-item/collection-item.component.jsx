@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import {
     CollectionItemDiv,
@@ -41,3 +42,11 @@ export const CollectionItem = ({ item, addItem, history, match, routeName }) => 
 }
 
 export default withRouter(CollectionItem)
+
+CollectionItem.propTypes = {
+    item: PropTypes.object.isRequired,
+    addItem: PropTypes.func.isRequired,
+    history: PropTypes.object,
+    match: PropTypes.object,
+    routeName: PropTypes.string
+}

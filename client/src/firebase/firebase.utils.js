@@ -1,6 +1,7 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import * as admin from 'firebase-admin'
 
 const config = {
     apiKey: 'AIzaSyBJbKVWjAHHlMbSzX3Ivj_9V1oy31FEY1U',
@@ -13,7 +14,12 @@ const config = {
     measurementId: 'G-FCV5K7Z0H5'
 }
 
-firebase.initializeApp(config)
+const serviceAccount = require('../../e-commerce-store-db-a3b29-firebase-adminsdk-q1or8-1f5886aed9.json')
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: 'https://e-commerce-store-db-a3b29.firebaseio.com'
+})
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return
@@ -91,6 +97,8 @@ export const getCurrentUser = () => {
     })
 }
 
+firebase.initializeApp(config)
+firebase.firestore.setLogLevel('debug')
 export const auth = firebase.auth()
 export const firestore = firebase.firestore()
 

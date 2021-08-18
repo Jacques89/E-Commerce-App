@@ -1,3 +1,401 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CollectionItem component should render CollectionItem component 1`] = `ReactWrapper {}`;
+exports[`CollectionItem component should render CollectionItem component 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <CollectionItem
+        addItem={[MockFunction]}
+        item={
+          Object {
+            "imageUrl": "www.testImage.com",
+            "name": "blackCDJ",
+            "price": 10,
+          }
+        }
+      >
+        <CollectionItemStyles>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "dvtpVT",
+                  "rules": Array [
+                    "
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    height: 21.875rem;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+
+    &:hover {
+        .image {
+            opacity: 0.8;
+        }
+        button {
+            opacity: 0.85;
+            display: flex;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 40vw;
+
+        &:hover {
+            .image {
+                opacity: unset;
+            }
+            button {
+                opacity: unset;
+            }
+        }
+    }
+
+    @media screen and (max-width: 554px) {
+        width: 40vw;
+        display: flex;
+        &:hover {
+            .image {
+                opacity: unset;
+            }
+            button {
+                opacity: unset;
+            }
+        }
+    }
+",
+                  ],
+                },
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bwzfXH dvtpVT"
+            >
+              <BackgroundImageStyles
+                className="image"
+                imageUrl="www.testImage.com"
+                onClick={[Function]}
+              >
+                <StyledComponent
+                  className="image"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bxivhb",
+                        "isStatic": false,
+                        "lastClassName": "hFVDgt",
+                        "rules": Array [
+                          "
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.313rem;
+    background-image: ",
+                          [Function],
+                          ";
+
+    @media screen and (max-width: 554px) {
+        width: 200%
+    }
+",
+                        ],
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bxivhb",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  imageUrl="www.testImage.com"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="sc-bxivhb hFVDgt image"
+                    onClick={[Function]}
+                  />
+                </StyledComponent>
+              </BackgroundImageStyles>
+              <CollectionFooterStyles>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-ifAKCX",
+                        "isStatic": false,
+                        "lastClassName": "VEwmV",
+                        "rules": Array [
+                          "
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+
+    @media screen and (max-width: 554px) {
+        width: 200%
+    }
+",
+                        ],
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-ifAKCX",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-ifAKCX VEwmV"
+                  >
+                    <NameSpanStyles>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-EHOje",
+                              "isStatic": false,
+                              "lastClassName": "kXpvxx",
+                              "rules": Array [
+                                "
+    width: 90%;
+    margin-bottom: 0.938rem;
+",
+                              ],
+                            },
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-EHOje",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="sc-EHOje kXpvxx"
+                        >
+                          blackCDJ
+                        </span>
+                      </StyledComponent>
+                    </NameSpanStyles>
+                    <PriceSpanStyles>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bZQynM",
+                              "isStatic": false,
+                              "lastClassName": "jyrdPw",
+                              "rules": Array [
+                                "
+    width: 10%;
+    text-align: right;
+",
+                              ],
+                            },
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bZQynM",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="sc-bZQynM jyrdPw"
+                        >
+                          10
+                          €
+                        </span>
+                      </StyledComponent>
+                    </PriceSpanStyles>
+                  </div>
+                </StyledComponent>
+              </CollectionFooterStyles>
+              <AddButtonStyles
+                inverted={true}
+                onClick={[Function]}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": false,
+                        "lastClassName": "ixxrhM",
+                        "rules": Array [
+                          "
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 15.938rem;
+    display: none;
+
+    @media screen and (max-width: 800px) {
+        display: block;
+        opacity: 0.9;
+        min-width: unset;
+        padding: 0 0.625rem;
+    }
+",
+                        ],
+                      },
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  inverted={true}
+                  onClick={[Function]}
+                >
+                  <CustomButton
+                    className="sc-htpNat ixxrhM"
+                    inverted={true}
+                    onClick={[Function]}
+                  >
+                    <styled.button
+                      className="sc-htpNat ixxrhM"
+                      inverted={true}
+                      onClick={[Function]}
+                    >
+                      <StyledComponent
+                        className="sc-htpNat ixxrhM"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "egadog",
+                              "rules": Array [
+                                "
+    min-width: 10.313rem;
+    width: auto;
+    height: 3.125rem;
+    letter-spacing: 0.031rem;
+    line-height: 3.125rem;
+    padding: 0 2.188rem 0 2.188rem;
+    font-size: 0.938rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    ",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        inverted={true}
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-bdVaJa egadog sc-htpNat ixxrhM"
+                          onClick={[Function]}
+                        >
+                          Add to cart
+                        </button>
+                      </StyledComponent>
+                    </styled.button>
+                  </CustomButton>
+                </StyledComponent>
+              </AddButtonStyles>
+            </div>
+          </StyledComponent>
+        </CollectionItemStyles>
+      </CollectionItem>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;

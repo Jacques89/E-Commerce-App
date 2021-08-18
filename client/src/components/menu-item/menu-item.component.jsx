@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import {
     MenuItemContainer,
@@ -20,3 +21,12 @@ export const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => 
 )
 
 export default withRouter(MenuItem)
+
+MenuItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    size: PropTypes.string,
+    history: PropTypes.object,
+    linkUrl: PropTypes.string,
+    match: PropTypes.object
+}

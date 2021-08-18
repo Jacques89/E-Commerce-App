@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Spinner from '../spinner/spinner.component'
 
@@ -9,3 +10,7 @@ const WithSpinner =
     }
 
 export default WithSpinner
+
+WithSpinner.propTypes = {
+    isLoading: PropTypes.bool
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
+import PropTypes from 'prop-types'
 
 import StripeCheckout from 'react-stripe-checkout'
 
@@ -53,3 +54,7 @@ const StripeCheckoutButton = ({ price }) => {
 }
 
 export default StripeCheckoutButton
+
+StripeCheckoutButton.propTypes = {
+    price: PropTypes.number.isRequired
+}

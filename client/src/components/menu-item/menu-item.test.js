@@ -7,7 +7,7 @@ describe('MenuItem component', () => {
     let wrapper
     let mockMatch
     let mockHistory
-    const linkUrl = '/hats'
+    const linkUrl = '/speakers'
     const size = 'large'
     const imageUrl = 'testimage'
 

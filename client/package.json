@@ -13,6 +13,7 @@
         "firebase-admin": "^9.11.0",
         "lodash.memoize": "^4.1.2",
         "node-sass": "^6.0.1",
+        "prop-types": "^15.7.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-redux": "^7.2.4",
@@ -46,7 +47,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test  --detectOpenHandles --forceExit",
+        "test": "react-scripts test --detectOpenHandles --forceExit",
         "coverage": "react-scripts test --detectOpenHandles --env=jsdom --watchAll=false --coverage",
         "eject": "react-scripts eject"
     },

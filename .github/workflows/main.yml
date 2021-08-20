@@ -27,5 +27,5 @@ jobs:
     - run: npm install
     - run: cd client && npm install
     - run: cd client && npm test
-    - env: 
+      env: 
         CI: true

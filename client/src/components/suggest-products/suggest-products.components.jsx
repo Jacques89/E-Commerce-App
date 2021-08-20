@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import CollectionItemContainer from '../collection-item/collection-item.container'
 
@@ -36,3 +37,8 @@ const SuggestedProducts = ({ collection, currItemId }) => {
 }
 
 export default SuggestedProducts
+
+SuggestedProducts.propTypes = {
+    collection: PropTypes.object.isRequired,
+    currItemId: PropTypes.number.isRequired
+}

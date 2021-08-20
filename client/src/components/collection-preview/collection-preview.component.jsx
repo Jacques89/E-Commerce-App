@@ -1,5 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import CollectionItemContainer from '../collection-item/collection-item.container'
 
@@ -21,3 +22,11 @@ const CollectionPreview = ({ title, items, history, match, routeName }) => (
 )
 
 export default withRouter(CollectionPreview)
+
+CollectionPreview.propTypes = {
+    title: PropTypes.string.isRequired,
+    items: PropTypes.array.isRequired,
+    history: PropTypes.object,
+    match: PropTypes.object,
+    routeName: PropTypes.string
+}

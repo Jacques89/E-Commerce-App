@@ -1,5 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+
 import { addItem } from '../../redux/cart/cart.actions'
 
 import {
@@ -33,3 +35,10 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(ProductDisplay)
+
+ProductDisplay.propTypes = {
+    price: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    addItem: PropTypes.func
+}

@@ -51,6 +51,11 @@
         "coverage": "react-scripts test --detectOpenHandles --env=jsdom --watchAll=false --coverage",
         "eject": "react-scripts eject"
     },
+    "jest": {
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ]
+    },
     "eslintConfig": {
         "extends": [
             "react-app",
@@ -72,6 +77,7 @@
     "devDependencies": {
         "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
         "enzyme": "^3.11.0",
+        "enzyme-to-json": "^3.6.2",
         "redux-mock-store": "^1.5.4"
     }
 }

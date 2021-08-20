@@ -1,3 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CollectionPreview Component Tests should render and match snapshot 1`] = `ShallowWrapper {}`;
+exports[`CollectionPreview Component Tests should render and match snapshot 1`] = `
+<CollectionPreviewStyles>
+  <TitleStyles
+    onClick={[Function]}
+  >
+    VINYL
+  </TitleStyles>
+  <PreviewStyles>
+    <Connect(withRouter(CollectionItem))
+      item={
+        Object {
+          "id": 1,
+          "imageUrl": "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
+          "name": "Adidas NMD",
+          "price": 220,
+        }
+      }
+      key="1"
+      routeName="vinyl"
+    />
+  </PreviewStyles>
+</CollectionPreviewStyles>
+`;

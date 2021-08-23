@@ -181,7 +181,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-ifAKCX",
                         "isStatic": false,
-                        "lastClassName": "osILI",
+                        "lastClassName": "iOIaxA",
                         "rules": Array [
                           "
     width: 100%;
@@ -190,7 +190,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
     justify-content: space-between;
     font-size: 1.125rem;
 
-    @media screen and (max-width: 554px) {
+    @media screen and (max-width: 800px) {
         width: 77vw;
     }
 ",
@@ -208,7 +208,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-ifAKCX osILI"
+                    className="sc-ifAKCX iOIaxA"
                   >
                     <NameSpanStyles>
                       <StyledComponent

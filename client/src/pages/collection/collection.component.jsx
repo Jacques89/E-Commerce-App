@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import CollectionItemContainer from '../../components/collection-item/collection-item.container'
 import { selectCollection } from '../../redux/shop/shop.selectors'
@@ -24,3 +25,9 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 export default connect(mapStateToProps)(CollectionPage)
+
+CollectionPage.propTypes = {
+    collection: PropTypes.object.isRequired,
+    title: PropTypes.string,
+    items: PropTypes.array
+} 

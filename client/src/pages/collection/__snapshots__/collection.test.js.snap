@@ -361,7 +361,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-ifAKCX",
                                           "isStatic": false,
-                                          "lastClassName": "osILI",
+                                          "lastClassName": "iOIaxA",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -370,7 +370,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     justify-content: space-between;
     font-size: 1.125rem;
 
-    @media screen and (max-width: 554px) {
+    @media screen and (max-width: 800px) {
         width: 77vw;
     }
 ",
@@ -388,7 +388,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-ifAKCX osILI"
+                                      className="sc-ifAKCX iOIaxA"
                                     >
                                       <NameSpanStyles>
                                         <StyledComponent
@@ -769,7 +769,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-ifAKCX",
                                           "isStatic": false,
-                                          "lastClassName": "osILI",
+                                          "lastClassName": "iOIaxA",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -778,7 +778,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     justify-content: space-between;
     font-size: 1.125rem;
 
-    @media screen and (max-width: 554px) {
+    @media screen and (max-width: 800px) {
         width: 77vw;
     }
 ",
@@ -796,7 +796,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-ifAKCX osILI"
+                                      className="sc-ifAKCX iOIaxA"
                                     >
                                       <NameSpanStyles>
                                         <StyledComponent
@@ -1177,7 +1177,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-ifAKCX",
                                           "isStatic": false,
-                                          "lastClassName": "osILI",
+                                          "lastClassName": "iOIaxA",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -1186,7 +1186,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     justify-content: space-between;
     font-size: 1.125rem;
 
-    @media screen and (max-width: 554px) {
+    @media screen and (max-width: 800px) {
         width: 77vw;
     }
 ",
@@ -1204,7 +1204,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-ifAKCX osILI"
+                                      className="sc-ifAKCX iOIaxA"
                                     >
                                       <NameSpanStyles>
                                         <StyledComponent

@@ -1,6 +1,7 @@
 import React, { useEffect, lazy, Suspense } from 'react'
 import { Route } from 'react-router-dom'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions'
 import Spinner from '../../components/spinner/spinner.component'
@@ -40,3 +41,8 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(ShopPage)
+
+ShopPage.propTypes = {
+    fetchCollectionsStart: PropTypes.func.isRequired,
+    match: PropTypes.object
+}

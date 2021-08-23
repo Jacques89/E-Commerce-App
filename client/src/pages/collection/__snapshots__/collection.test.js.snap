@@ -131,7 +131,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-dnqmqq",
                         "isStatic": false,
-                        "lastClassName": "jzWVuk",
+                        "lastClassName": "tAPoT",
                         "rules": Array [
                           "
     display: grid;
@@ -142,9 +142,8 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     }
 
     @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 0.938rem;
-        width: 83%;
     }
 
     @media screen and (max-width: 554px) {
@@ -167,7 +166,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-dnqmqq jzWVuk"
+                    className="sc-dnqmqq tAPoT"
                   >
                     <Connect(withRouter(CollectionItem))
                       item={
@@ -315,7 +314,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-bxivhb",
                                           "isStatic": false,
-                                          "lastClassName": "cBpCBr",
+                                          "lastClassName": "jMnsGq",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -327,8 +326,10 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                             [Function],
                                             ";
 
-    @media screen and (max-width: 554px) {
-        width: 200%
+    @media screen and (max-width: 800px) {
+        width: 77vw;
+        background-size: 41rem;
+        background-repeat: no-repeat;
     }
 ",
                                           ],
@@ -346,7 +347,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     onClick={[Function]}
                                   >
                                     <div
-                                      className="sc-bxivhb cBpCBr image"
+                                      className="sc-bxivhb jMnsGq image"
                                       onClick={[Function]}
                                     />
                                   </StyledComponent>
@@ -360,7 +361,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-ifAKCX",
                                           "isStatic": false,
-                                          "lastClassName": "VEwmV",
+                                          "lastClassName": "osILI",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -370,7 +371,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     font-size: 1.125rem;
 
     @media screen and (max-width: 554px) {
-        width: 200%
+        width: 77vw;
     }
 ",
                                           ],
@@ -387,7 +388,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-ifAKCX VEwmV"
+                                      className="sc-ifAKCX osILI"
                                     >
                                       <NameSpanStyles>
                                         <StyledComponent
@@ -721,7 +722,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-bxivhb",
                                           "isStatic": false,
-                                          "lastClassName": "cBpCBr",
+                                          "lastClassName": "jMnsGq",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -733,8 +734,10 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                             [Function],
                                             ";
 
-    @media screen and (max-width: 554px) {
-        width: 200%
+    @media screen and (max-width: 800px) {
+        width: 77vw;
+        background-size: 41rem;
+        background-repeat: no-repeat;
     }
 ",
                                           ],
@@ -752,7 +755,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     onClick={[Function]}
                                   >
                                     <div
-                                      className="sc-bxivhb cBpCBr image"
+                                      className="sc-bxivhb jMnsGq image"
                                       onClick={[Function]}
                                     />
                                   </StyledComponent>
@@ -766,7 +769,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-ifAKCX",
                                           "isStatic": false,
-                                          "lastClassName": "VEwmV",
+                                          "lastClassName": "osILI",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -776,7 +779,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     font-size: 1.125rem;
 
     @media screen and (max-width: 554px) {
-        width: 200%
+        width: 77vw;
     }
 ",
                                           ],
@@ -793,7 +796,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-ifAKCX VEwmV"
+                                      className="sc-ifAKCX osILI"
                                     >
                                       <NameSpanStyles>
                                         <StyledComponent
@@ -1127,7 +1130,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-bxivhb",
                                           "isStatic": false,
-                                          "lastClassName": "cBpCBr",
+                                          "lastClassName": "jMnsGq",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -1139,8 +1142,10 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                             [Function],
                                             ";
 
-    @media screen and (max-width: 554px) {
-        width: 200%
+    @media screen and (max-width: 800px) {
+        width: 77vw;
+        background-size: 41rem;
+        background-repeat: no-repeat;
     }
 ",
                                           ],
@@ -1158,7 +1163,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     onClick={[Function]}
                                   >
                                     <div
-                                      className="sc-bxivhb cBpCBr image"
+                                      className="sc-bxivhb jMnsGq image"
                                       onClick={[Function]}
                                     />
                                   </StyledComponent>
@@ -1172,7 +1177,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-ifAKCX",
                                           "isStatic": false,
-                                          "lastClassName": "VEwmV",
+                                          "lastClassName": "osILI",
                                           "rules": Array [
                                             "
     width: 100%;
@@ -1182,7 +1187,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     font-size: 1.125rem;
 
     @media screen and (max-width: 554px) {
-        width: 200%
+        width: 77vw;
     }
 ",
                                           ],
@@ -1199,7 +1204,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                                     forwardedRef={null}
                                   >
                                     <div
-                                      className="sc-ifAKCX VEwmV"
+                                      className="sc-ifAKCX osILI"
                                     >
                                       <NameSpanStyles>
                                         <StyledComponent

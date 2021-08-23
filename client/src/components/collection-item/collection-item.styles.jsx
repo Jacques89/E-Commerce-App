@@ -22,7 +22,7 @@ export const CollectionItemDiv = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-        width: 77vw;
+        width: 40vw;
 
         &:hover {
             .image {
@@ -35,7 +35,7 @@ export const CollectionItemDiv = styled.div`
     }
 
     @media screen and (max-width: 554px) {
-        width: 77vw;
+        width: 40vw;
         display: flex;
         &:hover {
             .image {
@@ -59,7 +59,7 @@ export const AddButton = styled(CustomButton)`
     @media screen and (max-width: 800px) {
         display: block;
         opacity: 0.9;
-        max-width: 50%;
+        min-width: unset;
         padding: 0 0.625rem;
     }
 `
@@ -72,6 +72,12 @@ export const BackgroundImage = styled.div`
     background-position: center;
     margin-bottom: 0.313rem;
     background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+
+    @media screen and (max-width: 800px) {
+        width: 77vw;
+        background-size: 41rem;
+        background-repeat: no-repeat;
+    }
 `
 BackgroundImage.displayName = 'BackgroundImageStyles'
 
@@ -82,7 +88,9 @@ export const CollectionFooterDiv = styled.div`
     justify-content: space-between;
     font-size: 1.125rem;
 
-    
+    @media screen and (max-width: 554px) {
+        width: 77vw;
+    }
 `
 CollectionFooterDiv.displayName = 'CollectionFooterStyles'
 

@@ -88,7 +88,7 @@ export const CollectionFooterDiv = styled.div`
     justify-content: space-between;
     font-size: 1.125rem;
 
-    @media screen and (max-width: 554px) {
+    @media screen and (max-width: 800px) {
         width: 77vw;
     }
 `

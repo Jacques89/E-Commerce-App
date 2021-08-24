@@ -14,19 +14,23 @@ export const ItemDiv = styled.div`
 `
 
 export const ItemImage = styled.div`
-    height: 30rem;
-    width: 100%;
-    background-size: contain;
+    background-size: 45rem 27rem, contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 
+    @media screen and (max-width: 1250px) {
+        height: 30rem;
+        width: 100%;
+    }
+
     @media screen and (min-width: 900px) {
         margin: 0;
+        width: 100%;
     }
 
     @media screen and (min-width: 1250px) {
-        height: 37.5rem;
+        height: 30rem;
     }
 `
 ItemImage.displayName = 'ItemImageStyles'
@@ -43,7 +47,7 @@ export const NameSpan = styled.h1`
     font-size: 250%;
     font-weight: 500;
     margin-top: 0.625rem;
-    margin-bottom: 0;
+    margin-bottom: 1.125rem;
 
     @media screen and (min-width: 900px) {
         grid-row: 1;
@@ -55,6 +59,7 @@ export const PriceSpan = styled.span`
     display: block;
     font-size: 150%;
     grid-row: 2;
+    margin-top: 0.52rem;
     margin-bottom: 1.563rem;
 `
 

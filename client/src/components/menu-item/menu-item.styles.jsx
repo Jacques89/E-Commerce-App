@@ -33,9 +33,13 @@ export const MenuItemContainer = styled.div`
         margin-left: 0.469rem;
     }
     
-    @media screen and (max-width: 800px) {
-        height: 12.5rem;
+    @media screen and (min-width: 320px) {
+        height: 15rem;
     }
+
+    @media screen and (min-width: 470px) {
+        height: 21rem;
+    }    
 `
 
 MenuItemContainer.displayName = 'MenuItemContainer'

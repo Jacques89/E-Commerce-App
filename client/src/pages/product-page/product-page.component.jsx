@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import { selectCollectionItem, selectCollection } from '../../redux/shop/shop.selectors'
 import ProductDisplay from '../../components/product-display/product-display.component'
@@ -23,3 +24,8 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 export default connect(mapStateToProps)(ProductPage)
+
+ProductPage.propTypes = {
+    collection: PropTypes.object.isRequired,
+    item: PropTypes.object
+}

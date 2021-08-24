@@ -133,7 +133,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bxivhb",
                         "isStatic": false,
-                        "lastClassName": "hFVDgt",
+                        "lastClassName": "evmSFB",
                         "rules": Array [
                           "
     width: 100%;
@@ -145,8 +145,10 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                           [Function],
                           ";
 
-    @media screen and (max-width: 554px) {
-        width: 200%
+    @media screen and (max-width: 800px) {
+        width: 77vw;
+        background-size: 41rem;
+        background-repeat: no-repeat;
     }
 ",
                         ],
@@ -165,7 +167,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-bxivhb hFVDgt image"
+                    className="sc-bxivhb evmSFB image"
                     onClick={[Function]}
                   />
                 </StyledComponent>
@@ -179,7 +181,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-ifAKCX",
                         "isStatic": false,
-                        "lastClassName": "VEwmV",
+                        "lastClassName": "iOIaxA",
                         "rules": Array [
                           "
     width: 100%;
@@ -188,8 +190,8 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
     justify-content: space-between;
     font-size: 1.125rem;
 
-    @media screen and (max-width: 554px) {
-        width: 200%
+    @media screen and (max-width: 800px) {
+        width: 77vw;
     }
 ",
                         ],
@@ -206,7 +208,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-ifAKCX VEwmV"
+                    className="sc-ifAKCX iOIaxA"
                   >
                     <NameSpanStyles>
                       <StyledComponent

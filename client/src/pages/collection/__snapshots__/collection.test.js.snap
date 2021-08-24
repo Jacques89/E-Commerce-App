@@ -131,7 +131,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-dnqmqq",
                         "isStatic": false,
-                        "lastClassName": "tAPoT",
+                        "lastClassName": "NOvSE",
                         "rules": Array [
                           "
     display: grid;
@@ -147,7 +147,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
     }
 
     @media screen and (max-width: 554px) {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-gap: 0.938rem;
         width: 40%;
     }
@@ -166,7 +166,7 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="sc-dnqmqq tAPoT"
+                    className="sc-dnqmqq NOvSE"
                   >
                     <Connect(withRouter(CollectionItem))
                       item={

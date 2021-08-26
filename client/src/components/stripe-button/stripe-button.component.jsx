@@ -39,7 +39,7 @@ const StripeCheckoutButton = ({ price }) => {
     return (
         <StripeCheckout
             label='Pay Now'
-            name='Thats Vinyl GmbH'
+            name="That\'s Vinyl GmbH"
             currency='EUR'
             billingAddress
             shippingAddress

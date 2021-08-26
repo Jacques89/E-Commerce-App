@@ -4,7 +4,7 @@ import { loadStripe } from '@stripe/stripe-js'
 
 import CheckoutForm from '../checkout-form/checkout-form'
 
-const PUBLIC_KEY = 'pk_test_4LWkhW6YMTeQkuUIVIe96Vhi00ntsc6jUc'
+const PUBLIC_KEY = process.env.REACT_APP_STRIPE_PUBLIC_KEY
 
 const stripeTestPromise = loadStripe(PUBLIC_KEY)
 

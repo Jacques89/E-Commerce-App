@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import './checkout-form.styles.scss'
 import axios from 'axios'
+import swal from 'sweetalert'
 
 const CARD_OPTIONS = {
     iconStyle: 'solid',
@@ -23,7 +24,7 @@ const CARD_OPTIONS = {
     }
 }
 
-export default function CheckoutForm() {
+const CheckoutForm = () => {
     const [success, setSuccess] = useState(false)
     const stripe = useStripe()
     const elements = useElements()
@@ -47,8 +48,19 @@ export default function CheckoutForm() {
                     console.log('Successful payment')
                     setSuccess(true)
                 }
+                swal('Payment Successful!', 'Your Order is complete!', 'success', {
+                    button: 'Continue'
+                })
             } catch (error) {
                 console.log('error', error)
+                swal(
+                    'There was an issue with your payment',
+                    'Please use the provided card details',
+                    'error',
+                    {
+                        button: 'Continue'
+                    }
+                )
             }
         } else {
             console.log(error.message)
@@ -74,3 +86,5 @@ export default function CheckoutForm() {
         </>
     )
 }
+
+export default CheckoutForm

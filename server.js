@@ -4,9 +4,7 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const enforce = require('express-sslify')
 
-if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: './env.local'})
-
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
+if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: './.env.local'})
 
 const app = express()
 const port = process.env.PORT || 5000
@@ -30,6 +28,7 @@ app.get('/service-worker.js', (req, res) => {
 })
 
 app.post('/payment', cors(), async (req, res) => {
+    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
     let { amount, id } = req.body
     try {
         const payment = await stripe.paymentIntents.create({

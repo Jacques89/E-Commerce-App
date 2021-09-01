@@ -39,8 +39,6 @@ exports[`should render CheckoutPage component 1`] = `
     <br />
     4242 4242 4242 4242 - Exp: 01/25 - CVV: 123
   </styled.div>
-  <StripeCheckoutButton
-    price={100}
-  />
+  <StripeContainer />
 </styled.div>
 `;

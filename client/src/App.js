@@ -3,9 +3,9 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import Header from './components/header/header.component'
-import Spinner from './components/spinner/spinner.component'
-import ErrorNotice from './components/error-notice/error-notice.component'
+import Header from './components/Navigation/header/header.component'
+import Spinner from './components/Loading/spinner/spinner.component'
+import ErrorNotice from './components/Error/error-notice/error-notice.component'
 
 import { GlobalStyle } from './global.styles'
 

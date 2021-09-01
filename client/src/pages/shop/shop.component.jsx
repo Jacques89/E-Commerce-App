@@ -4,11 +4,11 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions'
-import Spinner from '../../components/spinner/spinner.component'
+import Spinner from '../../components/Loading/spinner/spinner.component'
 import { ShopPageContainer } from './shop.styles'
 
 const CollectionsOverviewContainer = lazy(() =>
-    import('../../components/collections-overview/collections-overview.container')
+    import('../../components/Collection/collections-overview/collections-overview.container')
 )
 const CollectionPageContainer = lazy(() => import('../collection/collection.container'))
 const ProductPageContainer = lazy(() => import('../product-page/product-page.container'))

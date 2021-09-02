@@ -136,7 +136,7 @@ describe('is user authenticated saga', () => {
     const generator = isUserAuthenticated()
 
     it('should call getCurrentUser', () => {
-        expect(generator.next().value).toEqual(getCurrentUser())
+        expect(generator.next().value).toMatchObject(getCurrentUser())
     })
 
     it('should call getSnapshotFromUserAuth if userAuth exists', () => {

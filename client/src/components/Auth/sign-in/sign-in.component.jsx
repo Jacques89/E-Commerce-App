@@ -40,7 +40,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
                     type='email'
                     handleChange={handleChange}
                     value={email}
-                    label='email'
+                    label='Email'
                     required
                 />
                 <FormInput
@@ -48,11 +48,13 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
                     type='password'
                     value={password}
                     handleChange={handleChange}
-                    label='password'
+                    label='Password'
                     required
                 />
                 <ButtonsBarContainer>
-                    <CustomButton id='sign-in-email-button' type='submit'> Sign in </CustomButton>
+                    <CustomButton id='sign-in-email-button' type='submit'>
+                        Sign in
+                    </CustomButton>
                     <CustomButton type='button' onClick={googleSignInStart} isGoogleSignIn>
                         Sign in with Google
                     </CustomButton>

@@ -1,26 +1,32 @@
-import FormField from './billing-details.styles'
+import FormField from '../form-field/form-field.component'
 
 const BillingDetailsFields = () => {
     return (
         <>
-            <FormField name='name' label='Name' type='text' placeholder='Jane Doe' required />
+            <FormField name='name' label='Name' type='text' placeholder='John Doe' required />
             <FormField
                 name='email'
                 label='Email'
                 type='email'
-                placeholder='jane.doe@example.com'
+                placeholder='ex.ample@example.com'
                 required
             />
             <FormField
                 name='address'
                 label='Address'
                 type='text'
-                placeholder='185 Berry St. Suite 550'
+                placeholder='123 Example Street'
                 required
             />
-            <FormField name='city' label='City' type='text' placeholder='San Francisco' required />
-            <FormField name='state' label='State' type='text' placeholder='California' required />
-            <FormField name='zip' label='ZIP' type='text' placeholder='94103' required />
+            <FormField name='city' label='City' type='text' placeholder='e.g Berlin' required />
+            <FormField name='state' label='State' type='text' placeholder='e.g Berlin' required />
+            <FormField
+                name='postcode'
+                label='Postcode'
+                type='text'
+                placeholder='e.g 10432'
+                required
+            />
         </>
     )
 }

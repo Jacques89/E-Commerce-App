@@ -3,6 +3,7 @@ import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import './checkout-form.styles.scss'
 import axios from 'axios'
 import swal from 'sweetalert'
+import BillingDetailsFields from '../../Forms/billing-details/billing-details.component'
 
 const CARD_OPTIONS = {
     iconStyle: 'solid',
@@ -76,6 +77,7 @@ const CheckoutForm = () => {
                             <CardElement options={CARD_OPTIONS} />
                         </div>
                     </fieldset>
+                    {BillingDetailsFields()}
                     <button>Pay</button>
                 </form>
             ) : (

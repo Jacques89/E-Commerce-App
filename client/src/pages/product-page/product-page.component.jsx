@@ -2,9 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import { selectCollectionItem, selectCollection } from '../../redux/shop/shop.selectors'
-import ProductDisplay from '../../components/Products/product-display/product-display.component'
-import SuggestedProducts from '../../components/Products/suggest-products/suggest-products.components'
+import { selectCollectionItem, selectCollection } from 'redux/shop/shop.selectors'
+import ProductDisplay from 'components/Products/product-display/product-display.component'
+import SuggestedProducts from 'components/Products/suggest-products/suggest-products.components'
 
 import { PageDiv } from './product-page.styles'
 

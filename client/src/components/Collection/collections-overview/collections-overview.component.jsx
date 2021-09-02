@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 import CollectionPreview from '../collection-preview/collection-preview.component'
 
-import { selectCollectionsForPreview } from '../../../redux/shop/shop.selectors' 
+import { selectCollectionsForPreview } from 'redux/shop/shop.selectors' 
 import { CollectionsOverviewContainer } from './collections-overview.styles'
 
 export const CollectionsOverview = ({ collections }) => (

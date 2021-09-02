@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 import { CartDropdown } from './cart-dropdown.component'
 import CartItem from '../cart-item/cart-item.component'
 
-import { toggleCartHidden } from '../../../redux/cart/cart.actions'
+import { toggleCartHidden } from 'redux/cart/cart.actions'
 
 describe('CartDropdown component', () => {
     let wrapper

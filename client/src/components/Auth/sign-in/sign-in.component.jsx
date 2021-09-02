@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import FormInput from '../../Forms/form-input/form-input.component'
-import CustomButton from '../../Button/custom-button/custom-button.component'
+import FormInput from 'components/Forms/form-input/form-input.component'
+import CustomButton from 'components/Button/custom-button/custom-button.component'
 
 import { googleSignInStart, emailSignInStart } from '../../../redux/user/user.actions'
 

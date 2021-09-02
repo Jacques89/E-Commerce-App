@@ -3,13 +3,13 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import PropTypes from 'prop-types'
 
-import CartIcon from '../../Cart/cart-icon/cart-icon.component'
-import CartDropdown from '../../Cart/cart-dropdown/cart-dropdown.component'
-import { selectCartHidden } from '../../../redux/cart/cart.selectors'
-import { selectCurrentUser } from '../../../redux/user/user.selectors'
-import { signOutStart } from '../../../redux/user/user.actions'
+import CartIcon from 'components/Cart/cart-icon/cart-icon.component'
+import CartDropdown from 'components/Cart/cart-dropdown/cart-dropdown.component'
+import { selectCartHidden } from 'redux/cart/cart.selectors'
+import { selectCurrentUser } from 'redux/user/user.selectors'
+import { signOutStart } from 'redux/user/user.actions'
 
-import { ReactComponent as Logo } from '../../../assets/turntable.svg'
+import { ReactComponent as Logo } from 'assets/turntable.svg'
 
 import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.styles'
 

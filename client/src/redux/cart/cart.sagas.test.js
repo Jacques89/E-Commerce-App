@@ -1,6 +1,6 @@
 import { takeLatest, put } from 'redux-saga/effects'
 
-import UserActionTypes from '../user/user.types'
+import UserActionTypes from 'redux/user/user.types'
 import { clearCart } from './cart.actions'
 import { clearCartOnSignOut, onSignOutSuccess } from './cart.sagas'
 

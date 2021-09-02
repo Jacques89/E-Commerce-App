@@ -3,7 +3,7 @@ import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import './checkout-form.styles.scss'
 import axios from 'axios'
 import swal from 'sweetalert'
-import BillingDetailsFields from '../../Forms/billing-details/billing-details.component'
+import BillingDetailsFields from 'components/Forms/billing-details/billing-details.component'
 
 const CARD_OPTIONS = {
     iconStyle: 'solid',
@@ -13,7 +13,7 @@ const CARD_OPTIONS = {
             color: '#fff',
             fontWeight: 500,
             fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
-            fontSize: '16px',
+            fontSize: '1rem',
             fontSmoothing: 'antialiased',
             ':-webkit-autofill': { color: '#fce883' },
             '::placeholder': { color: '#87bbfd' }

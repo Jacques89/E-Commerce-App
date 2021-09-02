@@ -2,8 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import CollectionItemContainer from '../../components/Collection/collection-item/collection-item.container'
-import { selectCollection } from '../../redux/shop/shop.selectors'
+import CollectionItemContainer from 'components/Collection/collection-item/collection-item.container'
+import { selectCollection } from 'redux/shop/shop.selectors'
 
 import { CollectionPageContainer, CollectionTitle, CollectionItemsDiv } from './collection.styles'
 

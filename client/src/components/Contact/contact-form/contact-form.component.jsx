@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import swal from 'sweetalert'
 
-import FormInput from '../../Forms/form-input/form-input.component'
-import CustomButton from '../../Button/custom-button/custom-button.component'
+import FormInput from 'components/Forms/form-input/form-input.component'
+import CustomButton from 'components/Button/custom-button/custom-button.component'
 
 import { ContactFormContainer, Title, MessageBox } from './contact-form.styles'
 

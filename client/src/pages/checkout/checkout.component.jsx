@@ -3,10 +3,10 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import PropTypes from 'prop-types'
 
-import StripeContainer from '../../components/Payment/stripe/stripe-container.component'
-import CheckoutItem from '../../components/Checkout/checkout-item/checkout-item.component'
+import StripeContainer from 'components/Payment/stripe/stripe-container.component'
+import CheckoutItem from 'components/Checkout/checkout-item/checkout-item.component'
 
-import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors'
+import { selectCartItems, selectCartTotal } from 'redux/cart/cart.selectors'
 
 import {
     CheckoutPageContainer,

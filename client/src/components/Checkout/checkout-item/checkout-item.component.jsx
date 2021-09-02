@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import { clearItemFromCart, addItem, removeItem } from '../../../redux/cart/cart.actions'
+import { clearItemFromCart, addItem, removeItem } from 'redux/cart/cart.actions'
 
 import {
     CheckoutItemContainer,

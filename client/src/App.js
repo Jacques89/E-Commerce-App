@@ -3,21 +3,21 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import Header from './components/Navigation/header/header.component'
-import Spinner from './components/Loading/spinner/spinner.component'
-import ErrorNotice from './components/Error/error-notice/error-notice.component'
+import Header from 'components/Navigation/header/header.component'
+import Spinner from 'components/Loading/spinner/spinner.component'
+import ErrorNotice from 'components/Error/error-notice/error-notice.component'
 
 import { GlobalStyle } from './global.styles'
 
-import { selectCurrentUser } from './redux/user/user.selectors'
-import { checkUserSession } from './redux/user/user.actions'
+import { selectCurrentUser } from 'redux/user/user.selectors'
+import { checkUserSession } from 'redux/user/user.actions'
 
-const HomePage = lazy(() => import('./pages/homepage/homepage.component'))
-const ShopPage = lazy(() => import('./pages/shop/shop.component'))
-const ContactPage = lazy(() => import('./pages/contact/contact.component'))
-const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'))
+const HomePage = lazy(() => import('pages/homepage/homepage.component'))
+const ShopPage = lazy(() => import('pages/shop/shop.component'))
+const ContactPage = lazy(() => import('pages/contact/contact.component'))
+const CheckoutPage = lazy(() => import('pages/checkout/checkout.component'))
 const SignInAndSignUpPage = lazy(() =>
-    import('./pages/sign-in-and-sign-up/sign-in-and-sign-up.component')
+    import('pages/sign-in-and-sign-up/sign-in-and-sign-up.component')
 )
 
 const App = ({ checkUserSession, currentUser }) => {

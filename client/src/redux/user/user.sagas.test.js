@@ -4,7 +4,7 @@ import UserActionTypes from './user.types'
 
 import { signInFailure, signOutSuccess, signOutFailure } from './user.actions'
 
-import { auth, createUserProfileDocument, getCurrentUser } from '../../firebase/firebase.utils'
+import { auth, createUserProfileDocument, getCurrentUser } from 'firebase/firebase.utils'
 
 import {
     getSnapshotFromUserAuth,

@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 
 import { Header } from './header.component'
-import CartDropdown from '../../Cart/cart-dropdown/cart-dropdown.component'
+import CartDropdown from 'components/Cart/cart-dropdown/cart-dropdown.component'
 
 describe('Header component', () => {
     let wrapper

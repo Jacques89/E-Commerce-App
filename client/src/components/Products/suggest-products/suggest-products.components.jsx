@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import CollectionItemContainer from '../../Collection/collection-item/collection-item.container'
+import CollectionItemContainer from 'components/Collection/collection-item/collection-item.container'
 
 import { SuggestedProductsDiv, Title, SuggestedSectionDiv } from './suggest-products.styles'
 

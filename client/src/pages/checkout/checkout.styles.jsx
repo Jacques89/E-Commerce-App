@@ -7,10 +7,6 @@ export const CheckoutPageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 3.125rem auto 0;
-    button {
-        margin-left: auto;
-        margin-top: 3.125rem;
-    }
     @media screen and (max-width: 800px) {
         width: 90%;
     }
@@ -46,7 +42,7 @@ export const TotalContainer = styled.div`
 
 export const WarningContainer = styled.div`
     text-align: center;
-    margin-top: 2.5rem;
-    font-size: 0.15rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.55rem;
     color: red;
 `

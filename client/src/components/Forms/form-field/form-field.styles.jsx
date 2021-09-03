@@ -7,9 +7,14 @@ export const FormFieldContainer = styled.div`
     align-items: center;
     margin-left: 0.938rem;
     margin-right: 0.938rem;
+    width: 100%;
     border-top: 0.063rem solid #0000;
     &:first-of-type {
         border-top: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 89%;
     }
 `
 
@@ -19,10 +24,10 @@ export const Label = styled.label`
     padding: 0.688rem 0;
     color: #00000;
     overflow: hidden;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-overflow: ellipsis;
     white-space: nowrap;
-    border-right: 0.063rem solid #819efc;
+    border-right: 0.063rem;
 `
 
 export const Input = styled.input`

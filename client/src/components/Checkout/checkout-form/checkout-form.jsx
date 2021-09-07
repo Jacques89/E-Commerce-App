@@ -77,11 +77,11 @@ const CheckoutForm = () => {
                         </div>
                     </fieldset>
                     {BillingDetailsFields()}
-                    <button>Pay</button>
+                    <button className='PayButton'>Pay</button>
                 </form>
             ) : (
                 <div>
-                    <h2>Congrats! Order Complete</h2>
+                    <h2>Order has been submitted</h2>
                 </div>
             )}
         </>

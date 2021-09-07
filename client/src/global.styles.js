@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
             padding: 10px;
         }
     }
+
+    
     
     a {
         text-decoration: none;

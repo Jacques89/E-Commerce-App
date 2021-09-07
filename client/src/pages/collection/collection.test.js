@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import configureMockStore from 'redux-mock-store'
 
 import { CollectionPage } from './collection.component'
-import CollectionItem from '../../components/collection-item/collection-item.component'
+import CollectionItem from 'components/Collection/collection-item/collection-item.component'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 

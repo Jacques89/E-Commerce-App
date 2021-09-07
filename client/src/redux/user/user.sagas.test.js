@@ -4,7 +4,7 @@ import UserActionTypes from './user.types'
 
 import { signInFailure, signOutSuccess, signOutFailure } from './user.actions'
 
-import { auth, createUserProfileDocument, getCurrentUser } from '../../firebase/firebase.utils'
+import { auth, createUserProfileDocument, getCurrentUser } from 'firebase/firebase.utils'
 
 import {
     getSnapshotFromUserAuth,
@@ -136,7 +136,7 @@ describe('is user authenticated saga', () => {
     const generator = isUserAuthenticated()
 
     it('should call getCurrentUser', () => {
-        expect(generator.next().value).toEqual(getCurrentUser())
+        expect(generator.next().value).toMatchObject(getCurrentUser())
     })
 
     it('should call getSnapshotFromUserAuth if userAuth exists', () => {

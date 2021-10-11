@@ -90,7 +90,7 @@ export const getCurrentUser = () => {
 }
 
 firebase.initializeApp(config)
-firebase.firestore.setLogLevel('debug')
+// firebase.firestore.setLogLevel('debug')
 export const auth = firebase.auth()
 export const firestore = firebase.firestore()
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MenuItemContainer = styled.div`
-	height: ${({ size }) => (size ? '23.75rem' : '15rem')}
+	height: ${({ size }) => (size ? '23.75rem' : '5rem')}
 	min-width: 30%;
 	overflow: hidden;
 	flex: 1 1 auto;
@@ -33,7 +33,7 @@ export const MenuItemContainer = styled.div`
         margin-left: 0.469rem;
     }
     
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 50px) {
         height: 15rem;
     }
 

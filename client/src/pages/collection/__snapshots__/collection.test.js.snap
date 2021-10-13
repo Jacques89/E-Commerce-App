@@ -55,1348 +55,380 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
         }
       >
         <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gzVnrw",
-                  "isStatic": false,
-                  "lastClassName": "ksSQPz",
-                  "rules": Array [
-                    "
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-",
-                  ],
-                },
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gzVnrw",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <div
+            className="sc-iBPTik jLHUJN"
           >
-            <div
-              className="sc-gzVnrw ksSQPz"
-            >
-              <styled.h2>
-                <StyledComponent
-                  forwardedComponent={
+            <styled.h2>
+              <h2
+                className="sc-fubCzh kggWwV"
+              >
+                Test
+              </h2>
+            </styled.h2>
+            <CollectionItemsStyle>
+              <div
+                className="sc-pGacB dCTXWU"
+              >
+                <Connect(withRouter(CollectionItem))
+                  item={
                     Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htoDjs",
-                        "isStatic": false,
-                        "lastClassName": "gKnRXn",
-                        "rules": Array [
-                          "
-    font-size: 2.375rem;
-    margin: 0 auto 1.875rem;
-",
-                        ],
-                      },
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htoDjs",
-                      "target": "h2",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                      "id": 1,
                     }
                   }
-                  forwardedRef={null}
+                  key="1"
                 >
-                  <h2
-                    className="sc-htoDjs gKnRXn"
-                  >
-                    Test
-                  </h2>
-                </StyledComponent>
-              </styled.h2>
-              <CollectionItemsStyle>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-dnqmqq",
-                        "isStatic": false,
-                        "lastClassName": "NOvSE",
-                        "rules": Array [
-                          "
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.938rem;
-    & > div {
-        margin-bottom: 1.875rem;
-    }
-
-    @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
-        grid-gap: 0.938rem;
-    }
-
-    @media screen and (max-width: 554px) {
-        grid-template-columns: 1fr;
-        grid-gap: 0.938rem;
-        width: 40%;
-    }
-",
-                        ],
-                      },
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-dnqmqq",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                  <withRouter(CollectionItem)
+                    addItem={[Function]}
+                    item={
+                      Object {
+                        "id": 1,
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                >
-                  <div
-                    className="sc-dnqmqq NOvSE"
                   >
-                    <Connect(withRouter(CollectionItem))
+                    <CollectionItem
+                      addItem={[Function]}
+                      history={
+                        Object {
+                          "action": "POP",
+                          "block": [Function],
+                          "createHref": [Function],
+                          "go": [Function],
+                          "goBack": [Function],
+                          "goForward": [Function],
+                          "length": 1,
+                          "listen": [Function],
+                          "location": Object {
+                            "hash": "",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          },
+                          "push": [Function],
+                          "replace": [Function],
+                        }
+                      }
                       item={
                         Object {
                           "id": 1,
                         }
                       }
-                      key="1"
-                    >
-                      <withRouter(CollectionItem)
-                        addItem={[Function]}
-                        item={
-                          Object {
-                            "id": 1,
-                          }
+                      location={
+                        Object {
+                          "hash": "",
+                          "pathname": "/",
+                          "search": "",
+                          "state": undefined,
                         }
-                      >
-                        <CollectionItem
-                          addItem={[Function]}
-                          history={
-                            Object {
-                              "action": "POP",
-                              "block": [Function],
-                              "createHref": [Function],
-                              "go": [Function],
-                              "goBack": [Function],
-                              "goForward": [Function],
-                              "length": 1,
-                              "listen": [Function],
-                              "location": Object {
-                                "hash": "",
-                                "pathname": "/",
-                                "search": "",
-                                "state": undefined,
-                              },
-                              "push": [Function],
-                              "replace": [Function],
-                            }
-                          }
-                          item={
-                            Object {
-                              "id": 1,
-                            }
-                          }
-                          location={
-                            Object {
-                              "hash": "",
-                              "pathname": "/",
-                              "search": "",
-                              "state": undefined,
-                            }
-                          }
-                          match={
-                            Object {
-                              "isExact": true,
-                              "params": Object {},
-                              "path": "/",
-                              "url": "/",
-                            }
-                          }
+                      }
+                      match={
+                        Object {
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
+                    >
+                      <CollectionItemStyles>
+                        <div
+                          className="sc-gsTEea gpvzcy"
                         >
-                          <CollectionItemStyles>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bwzfXH",
-                                    "isStatic": false,
-                                    "lastClassName": "dvtpVT",
-                                    "rules": Array [
-                                      "
-    width: 22vw;
-    display: flex;
-    flex-direction: column;
-    height: 21.875rem;
-    align-items: center;
-    position: relative;
-    margin-bottom: 1.25rem;
-    cursor: pointer;
-
-    &:hover {
-        .image {
-            opacity: 0.8;
-        }
-        button {
-            opacity: 0.85;
-            display: flex;
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        width: 40vw;
-
-        &:hover {
-            .image {
-                opacity: unset;
-            }
-            button {
-                opacity: unset;
-            }
-        }
-    }
-
-    @media screen and (max-width: 554px) {
-        width: 40vw;
-        display: flex;
-        &:hover {
-            .image {
-                opacity: unset;
-            }
-            button {
-                opacity: unset;
-            }
-        }
-    }
-",
-                                    ],
-                                  },
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bwzfXH",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                          <BackgroundImageStyles
+                            className="image"
+                            onClick={[Function]}
+                          >
+                            <div
+                              className="sc-hKgJUU katQCk image"
+                              onClick={[Function]}
+                            />
+                          </BackgroundImageStyles>
+                          <CollectionFooterStyles>
+                            <div
+                              className="sc-eCstlR hXZTWx"
                             >
-                              <div
-                                className="sc-bwzfXH dvtpVT"
+                              <NameSpanStyles>
+                                <span
+                                  className="sc-jSgvzq cpdSLY"
+                                />
+                              </NameSpanStyles>
+                              <PriceSpanStyles>
+                                <span
+                                  className="sc-gKseQn edKNxZ"
+                                >
+                                  €
+                                </span>
+                              </PriceSpanStyles>
+                            </div>
+                          </CollectionFooterStyles>
+                          <AddButtonStyles
+                            inverted={true}
+                            onClick={[Function]}
+                          >
+                            <CustomButton
+                              className="sc-dlfnuX eznRbH"
+                              inverted={true}
+                              onClick={[Function]}
+                            >
+                              <styled.button
+                                className="sc-dlfnuX eznRbH"
+                                inverted={true}
+                                onClick={[Function]}
                               >
-                                <BackgroundImageStyles
-                                  className="image"
+                                <button
+                                  className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
                                   onClick={[Function]}
                                 >
-                                  <StyledComponent
-                                    className="image"
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bxivhb",
-                                          "isStatic": false,
-                                          "lastClassName": "jMnsGq",
-                                          "rules": Array [
-                                            "
-    width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 0.313rem;
-    background-image: ",
-                                            [Function],
-                                            ";
-
-    @media screen and (max-width: 800px) {
-        width: 77vw;
-        background-size: 41rem;
-        background-repeat: no-repeat;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bxivhb",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    onClick={[Function]}
-                                  >
-                                    <div
-                                      className="sc-bxivhb jMnsGq image"
-                                      onClick={[Function]}
-                                    />
-                                  </StyledComponent>
-                                </BackgroundImageStyles>
-                                <CollectionFooterStyles>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-ifAKCX",
-                                          "isStatic": false,
-                                          "lastClassName": "iOIaxA",
-                                          "rules": Array [
-                                            "
-    width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.125rem;
-
-    @media screen and (max-width: 800px) {
-        width: 77vw;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-ifAKCX",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="sc-ifAKCX iOIaxA"
-                                    >
-                                      <NameSpanStyles>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-EHOje",
-                                                "isStatic": false,
-                                                "lastClassName": "kXpvxx",
-                                                "rules": Array [
-                                                  "
-    width: 90%;
-    margin-bottom: 0.938rem;
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-EHOje",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-EHOje kXpvxx"
-                                          />
-                                        </StyledComponent>
-                                      </NameSpanStyles>
-                                      <PriceSpanStyles>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bZQynM",
-                                                "isStatic": false,
-                                                "lastClassName": "jyrdPw",
-                                                "rules": Array [
-                                                  "
-    width: 10%;
-    text-align: right;
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bZQynM",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-bZQynM jyrdPw"
-                                          >
-                                            €
-                                          </span>
-                                        </StyledComponent>
-                                      </PriceSpanStyles>
-                                    </div>
-                                  </StyledComponent>
-                                </CollectionFooterStyles>
-                                <AddButtonStyles
-                                  inverted={true}
-                                  onClick={[Function]}
-                                >
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
-                                          "isStatic": false,
-                                          "lastClassName": "ixxrhM",
-                                          "rules": Array [
-                                            "
-    width: 80%;
-    opacity: 0.7;
-    position: absolute;
-    top: 15.938rem;
-    display: none;
-
-    @media screen and (max-width: 800px) {
-        display: block;
-        opacity: 0.9;
-        min-width: unset;
-        padding: 0 0.625rem;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    inverted={true}
-                                    onClick={[Function]}
-                                  >
-                                    <CustomButton
-                                      className="sc-htpNat ixxrhM"
-                                      inverted={true}
-                                      onClick={[Function]}
-                                    >
-                                      <styled.button
-                                        className="sc-htpNat ixxrhM"
-                                        inverted={true}
-                                        onClick={[Function]}
-                                      >
-                                        <StyledComponent
-                                          className="sc-htpNat ixxrhM"
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bdVaJa",
-                                                "isStatic": false,
-                                                "lastClassName": "egadog",
-                                                "rules": Array [
-                                                  "
-    min-width: 10.313rem;
-    width: auto;
-    height: 3.125rem;
-    letter-spacing: 0.031rem;
-    line-height: 3.125rem;
-    padding: 0 2.188rem 0 2.188rem;
-    font-size: 0.938rem;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
-    font-weight: bolder;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-
-    ",
-                                                  [Function],
-                                                  "
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bdVaJa",
-                                              "target": "button",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                          inverted={true}
-                                          onClick={[Function]}
-                                        >
-                                          <button
-                                            className="sc-bdVaJa egadog sc-htpNat ixxrhM"
-                                            onClick={[Function]}
-                                          >
-                                            Add to cart
-                                          </button>
-                                        </StyledComponent>
-                                      </styled.button>
-                                    </CustomButton>
-                                  </StyledComponent>
-                                </AddButtonStyles>
-                              </div>
-                            </StyledComponent>
-                          </CollectionItemStyles>
-                        </CollectionItem>
-                      </withRouter(CollectionItem)>
-                    </Connect(withRouter(CollectionItem))>
-                    <Connect(withRouter(CollectionItem))
+                                  Add to cart
+                                </button>
+                              </styled.button>
+                            </CustomButton>
+                          </AddButtonStyles>
+                        </div>
+                      </CollectionItemStyles>
+                    </CollectionItem>
+                  </withRouter(CollectionItem)>
+                </Connect(withRouter(CollectionItem))>
+                <Connect(withRouter(CollectionItem))
+                  item={
+                    Object {
+                      "id": 2,
+                    }
+                  }
+                  key="2"
+                >
+                  <withRouter(CollectionItem)
+                    addItem={[Function]}
+                    item={
+                      Object {
+                        "id": 2,
+                      }
+                    }
+                  >
+                    <CollectionItem
+                      addItem={[Function]}
+                      history={
+                        Object {
+                          "action": "POP",
+                          "block": [Function],
+                          "createHref": [Function],
+                          "go": [Function],
+                          "goBack": [Function],
+                          "goForward": [Function],
+                          "length": 1,
+                          "listen": [Function],
+                          "location": Object {
+                            "hash": "",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          },
+                          "push": [Function],
+                          "replace": [Function],
+                        }
+                      }
                       item={
                         Object {
                           "id": 2,
                         }
                       }
-                      key="2"
-                    >
-                      <withRouter(CollectionItem)
-                        addItem={[Function]}
-                        item={
-                          Object {
-                            "id": 2,
-                          }
+                      location={
+                        Object {
+                          "hash": "",
+                          "pathname": "/",
+                          "search": "",
+                          "state": undefined,
                         }
-                      >
-                        <CollectionItem
-                          addItem={[Function]}
-                          history={
-                            Object {
-                              "action": "POP",
-                              "block": [Function],
-                              "createHref": [Function],
-                              "go": [Function],
-                              "goBack": [Function],
-                              "goForward": [Function],
-                              "length": 1,
-                              "listen": [Function],
-                              "location": Object {
-                                "hash": "",
-                                "pathname": "/",
-                                "search": "",
-                                "state": undefined,
-                              },
-                              "push": [Function],
-                              "replace": [Function],
-                            }
-                          }
-                          item={
-                            Object {
-                              "id": 2,
-                            }
-                          }
-                          location={
-                            Object {
-                              "hash": "",
-                              "pathname": "/",
-                              "search": "",
-                              "state": undefined,
-                            }
-                          }
-                          match={
-                            Object {
-                              "isExact": true,
-                              "params": Object {},
-                              "path": "/",
-                              "url": "/",
-                            }
-                          }
+                      }
+                      match={
+                        Object {
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
+                    >
+                      <CollectionItemStyles>
+                        <div
+                          className="sc-gsTEea gpvzcy"
                         >
-                          <CollectionItemStyles>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bwzfXH",
-                                    "isStatic": false,
-                                    "lastClassName": "dvtpVT",
-                                    "rules": Array [
-                                      "
-    width: 22vw;
-    display: flex;
-    flex-direction: column;
-    height: 21.875rem;
-    align-items: center;
-    position: relative;
-    margin-bottom: 1.25rem;
-    cursor: pointer;
-
-    &:hover {
-        .image {
-            opacity: 0.8;
-        }
-        button {
-            opacity: 0.85;
-            display: flex;
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        width: 40vw;
-
-        &:hover {
-            .image {
-                opacity: unset;
-            }
-            button {
-                opacity: unset;
-            }
-        }
-    }
-
-    @media screen and (max-width: 554px) {
-        width: 40vw;
-        display: flex;
-        &:hover {
-            .image {
-                opacity: unset;
-            }
-            button {
-                opacity: unset;
-            }
-        }
-    }
-",
-                                    ],
-                                  },
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bwzfXH",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                          <BackgroundImageStyles
+                            className="image"
+                            onClick={[Function]}
+                          >
+                            <div
+                              className="sc-hKgJUU katQCk image"
+                              onClick={[Function]}
+                            />
+                          </BackgroundImageStyles>
+                          <CollectionFooterStyles>
+                            <div
+                              className="sc-eCstlR hXZTWx"
                             >
-                              <div
-                                className="sc-bwzfXH dvtpVT"
+                              <NameSpanStyles>
+                                <span
+                                  className="sc-jSgvzq cpdSLY"
+                                />
+                              </NameSpanStyles>
+                              <PriceSpanStyles>
+                                <span
+                                  className="sc-gKseQn edKNxZ"
+                                >
+                                  €
+                                </span>
+                              </PriceSpanStyles>
+                            </div>
+                          </CollectionFooterStyles>
+                          <AddButtonStyles
+                            inverted={true}
+                            onClick={[Function]}
+                          >
+                            <CustomButton
+                              className="sc-dlfnuX eznRbH"
+                              inverted={true}
+                              onClick={[Function]}
+                            >
+                              <styled.button
+                                className="sc-dlfnuX eznRbH"
+                                inverted={true}
+                                onClick={[Function]}
                               >
-                                <BackgroundImageStyles
-                                  className="image"
+                                <button
+                                  className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
                                   onClick={[Function]}
                                 >
-                                  <StyledComponent
-                                    className="image"
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bxivhb",
-                                          "isStatic": false,
-                                          "lastClassName": "jMnsGq",
-                                          "rules": Array [
-                                            "
-    width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 0.313rem;
-    background-image: ",
-                                            [Function],
-                                            ";
-
-    @media screen and (max-width: 800px) {
-        width: 77vw;
-        background-size: 41rem;
-        background-repeat: no-repeat;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bxivhb",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    onClick={[Function]}
-                                  >
-                                    <div
-                                      className="sc-bxivhb jMnsGq image"
-                                      onClick={[Function]}
-                                    />
-                                  </StyledComponent>
-                                </BackgroundImageStyles>
-                                <CollectionFooterStyles>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-ifAKCX",
-                                          "isStatic": false,
-                                          "lastClassName": "iOIaxA",
-                                          "rules": Array [
-                                            "
-    width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.125rem;
-
-    @media screen and (max-width: 800px) {
-        width: 77vw;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-ifAKCX",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="sc-ifAKCX iOIaxA"
-                                    >
-                                      <NameSpanStyles>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-EHOje",
-                                                "isStatic": false,
-                                                "lastClassName": "kXpvxx",
-                                                "rules": Array [
-                                                  "
-    width: 90%;
-    margin-bottom: 0.938rem;
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-EHOje",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-EHOje kXpvxx"
-                                          />
-                                        </StyledComponent>
-                                      </NameSpanStyles>
-                                      <PriceSpanStyles>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bZQynM",
-                                                "isStatic": false,
-                                                "lastClassName": "jyrdPw",
-                                                "rules": Array [
-                                                  "
-    width: 10%;
-    text-align: right;
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bZQynM",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-bZQynM jyrdPw"
-                                          >
-                                            €
-                                          </span>
-                                        </StyledComponent>
-                                      </PriceSpanStyles>
-                                    </div>
-                                  </StyledComponent>
-                                </CollectionFooterStyles>
-                                <AddButtonStyles
-                                  inverted={true}
-                                  onClick={[Function]}
-                                >
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
-                                          "isStatic": false,
-                                          "lastClassName": "ixxrhM",
-                                          "rules": Array [
-                                            "
-    width: 80%;
-    opacity: 0.7;
-    position: absolute;
-    top: 15.938rem;
-    display: none;
-
-    @media screen and (max-width: 800px) {
-        display: block;
-        opacity: 0.9;
-        min-width: unset;
-        padding: 0 0.625rem;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    inverted={true}
-                                    onClick={[Function]}
-                                  >
-                                    <CustomButton
-                                      className="sc-htpNat ixxrhM"
-                                      inverted={true}
-                                      onClick={[Function]}
-                                    >
-                                      <styled.button
-                                        className="sc-htpNat ixxrhM"
-                                        inverted={true}
-                                        onClick={[Function]}
-                                      >
-                                        <StyledComponent
-                                          className="sc-htpNat ixxrhM"
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bdVaJa",
-                                                "isStatic": false,
-                                                "lastClassName": "egadog",
-                                                "rules": Array [
-                                                  "
-    min-width: 10.313rem;
-    width: auto;
-    height: 3.125rem;
-    letter-spacing: 0.031rem;
-    line-height: 3.125rem;
-    padding: 0 2.188rem 0 2.188rem;
-    font-size: 0.938rem;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
-    font-weight: bolder;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-
-    ",
-                                                  [Function],
-                                                  "
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bdVaJa",
-                                              "target": "button",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                          inverted={true}
-                                          onClick={[Function]}
-                                        >
-                                          <button
-                                            className="sc-bdVaJa egadog sc-htpNat ixxrhM"
-                                            onClick={[Function]}
-                                          >
-                                            Add to cart
-                                          </button>
-                                        </StyledComponent>
-                                      </styled.button>
-                                    </CustomButton>
-                                  </StyledComponent>
-                                </AddButtonStyles>
-                              </div>
-                            </StyledComponent>
-                          </CollectionItemStyles>
-                        </CollectionItem>
-                      </withRouter(CollectionItem)>
-                    </Connect(withRouter(CollectionItem))>
-                    <Connect(withRouter(CollectionItem))
+                                  Add to cart
+                                </button>
+                              </styled.button>
+                            </CustomButton>
+                          </AddButtonStyles>
+                        </div>
+                      </CollectionItemStyles>
+                    </CollectionItem>
+                  </withRouter(CollectionItem)>
+                </Connect(withRouter(CollectionItem))>
+                <Connect(withRouter(CollectionItem))
+                  item={
+                    Object {
+                      "id": 3,
+                    }
+                  }
+                  key="3"
+                >
+                  <withRouter(CollectionItem)
+                    addItem={[Function]}
+                    item={
+                      Object {
+                        "id": 3,
+                      }
+                    }
+                  >
+                    <CollectionItem
+                      addItem={[Function]}
+                      history={
+                        Object {
+                          "action": "POP",
+                          "block": [Function],
+                          "createHref": [Function],
+                          "go": [Function],
+                          "goBack": [Function],
+                          "goForward": [Function],
+                          "length": 1,
+                          "listen": [Function],
+                          "location": Object {
+                            "hash": "",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          },
+                          "push": [Function],
+                          "replace": [Function],
+                        }
+                      }
                       item={
                         Object {
                           "id": 3,
                         }
                       }
-                      key="3"
-                    >
-                      <withRouter(CollectionItem)
-                        addItem={[Function]}
-                        item={
-                          Object {
-                            "id": 3,
-                          }
+                      location={
+                        Object {
+                          "hash": "",
+                          "pathname": "/",
+                          "search": "",
+                          "state": undefined,
                         }
-                      >
-                        <CollectionItem
-                          addItem={[Function]}
-                          history={
-                            Object {
-                              "action": "POP",
-                              "block": [Function],
-                              "createHref": [Function],
-                              "go": [Function],
-                              "goBack": [Function],
-                              "goForward": [Function],
-                              "length": 1,
-                              "listen": [Function],
-                              "location": Object {
-                                "hash": "",
-                                "pathname": "/",
-                                "search": "",
-                                "state": undefined,
-                              },
-                              "push": [Function],
-                              "replace": [Function],
-                            }
-                          }
-                          item={
-                            Object {
-                              "id": 3,
-                            }
-                          }
-                          location={
-                            Object {
-                              "hash": "",
-                              "pathname": "/",
-                              "search": "",
-                              "state": undefined,
-                            }
-                          }
-                          match={
-                            Object {
-                              "isExact": true,
-                              "params": Object {},
-                              "path": "/",
-                              "url": "/",
-                            }
-                          }
+                      }
+                      match={
+                        Object {
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
+                    >
+                      <CollectionItemStyles>
+                        <div
+                          className="sc-gsTEea gpvzcy"
                         >
-                          <CollectionItemStyles>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bwzfXH",
-                                    "isStatic": false,
-                                    "lastClassName": "dvtpVT",
-                                    "rules": Array [
-                                      "
-    width: 22vw;
-    display: flex;
-    flex-direction: column;
-    height: 21.875rem;
-    align-items: center;
-    position: relative;
-    margin-bottom: 1.25rem;
-    cursor: pointer;
-
-    &:hover {
-        .image {
-            opacity: 0.8;
-        }
-        button {
-            opacity: 0.85;
-            display: flex;
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        width: 40vw;
-
-        &:hover {
-            .image {
-                opacity: unset;
-            }
-            button {
-                opacity: unset;
-            }
-        }
-    }
-
-    @media screen and (max-width: 554px) {
-        width: 40vw;
-        display: flex;
-        &:hover {
-            .image {
-                opacity: unset;
-            }
-            button {
-                opacity: unset;
-            }
-        }
-    }
-",
-                                    ],
-                                  },
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bwzfXH",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                          <BackgroundImageStyles
+                            className="image"
+                            onClick={[Function]}
+                          >
+                            <div
+                              className="sc-hKgJUU katQCk image"
+                              onClick={[Function]}
+                            />
+                          </BackgroundImageStyles>
+                          <CollectionFooterStyles>
+                            <div
+                              className="sc-eCstlR hXZTWx"
                             >
-                              <div
-                                className="sc-bwzfXH dvtpVT"
+                              <NameSpanStyles>
+                                <span
+                                  className="sc-jSgvzq cpdSLY"
+                                />
+                              </NameSpanStyles>
+                              <PriceSpanStyles>
+                                <span
+                                  className="sc-gKseQn edKNxZ"
+                                >
+                                  €
+                                </span>
+                              </PriceSpanStyles>
+                            </div>
+                          </CollectionFooterStyles>
+                          <AddButtonStyles
+                            inverted={true}
+                            onClick={[Function]}
+                          >
+                            <CustomButton
+                              className="sc-dlfnuX eznRbH"
+                              inverted={true}
+                              onClick={[Function]}
+                            >
+                              <styled.button
+                                className="sc-dlfnuX eznRbH"
+                                inverted={true}
+                                onClick={[Function]}
                               >
-                                <BackgroundImageStyles
-                                  className="image"
+                                <button
+                                  className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
                                   onClick={[Function]}
                                 >
-                                  <StyledComponent
-                                    className="image"
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bxivhb",
-                                          "isStatic": false,
-                                          "lastClassName": "jMnsGq",
-                                          "rules": Array [
-                                            "
-    width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 0.313rem;
-    background-image: ",
-                                            [Function],
-                                            ";
-
-    @media screen and (max-width: 800px) {
-        width: 77vw;
-        background-size: 41rem;
-        background-repeat: no-repeat;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-bxivhb",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    onClick={[Function]}
-                                  >
-                                    <div
-                                      className="sc-bxivhb jMnsGq image"
-                                      onClick={[Function]}
-                                    />
-                                  </StyledComponent>
-                                </BackgroundImageStyles>
-                                <CollectionFooterStyles>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-ifAKCX",
-                                          "isStatic": false,
-                                          "lastClassName": "iOIaxA",
-                                          "rules": Array [
-                                            "
-    width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.125rem;
-
-    @media screen and (max-width: 800px) {
-        width: 77vw;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-ifAKCX",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="sc-ifAKCX iOIaxA"
-                                    >
-                                      <NameSpanStyles>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-EHOje",
-                                                "isStatic": false,
-                                                "lastClassName": "kXpvxx",
-                                                "rules": Array [
-                                                  "
-    width: 90%;
-    margin-bottom: 0.938rem;
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-EHOje",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-EHOje kXpvxx"
-                                          />
-                                        </StyledComponent>
-                                      </NameSpanStyles>
-                                      <PriceSpanStyles>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bZQynM",
-                                                "isStatic": false,
-                                                "lastClassName": "jyrdPw",
-                                                "rules": Array [
-                                                  "
-    width: 10%;
-    text-align: right;
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bZQynM",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-bZQynM jyrdPw"
-                                          >
-                                            €
-                                          </span>
-                                        </StyledComponent>
-                                      </PriceSpanStyles>
-                                    </div>
-                                  </StyledComponent>
-                                </CollectionFooterStyles>
-                                <AddButtonStyles
-                                  inverted={true}
-                                  onClick={[Function]}
-                                >
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
-                                          "isStatic": false,
-                                          "lastClassName": "ixxrhM",
-                                          "rules": Array [
-                                            "
-    width: 80%;
-    opacity: 0.7;
-    position: absolute;
-    top: 15.938rem;
-    display: none;
-
-    @media screen and (max-width: 800px) {
-        display: block;
-        opacity: 0.9;
-        min-width: unset;
-        padding: 0 0.625rem;
-    }
-",
-                                          ],
-                                        },
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": [Function],
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                    inverted={true}
-                                    onClick={[Function]}
-                                  >
-                                    <CustomButton
-                                      className="sc-htpNat ixxrhM"
-                                      inverted={true}
-                                      onClick={[Function]}
-                                    >
-                                      <styled.button
-                                        className="sc-htpNat ixxrhM"
-                                        inverted={true}
-                                        onClick={[Function]}
-                                      >
-                                        <StyledComponent
-                                          className="sc-htpNat ixxrhM"
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bdVaJa",
-                                                "isStatic": false,
-                                                "lastClassName": "egadog",
-                                                "rules": Array [
-                                                  "
-    min-width: 10.313rem;
-    width: auto;
-    height: 3.125rem;
-    letter-spacing: 0.031rem;
-    line-height: 3.125rem;
-    padding: 0 2.188rem 0 2.188rem;
-    font-size: 0.938rem;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
-    font-weight: bolder;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-
-    ",
-                                                  [Function],
-                                                  "
-",
-                                                ],
-                                              },
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-bdVaJa",
-                                              "target": "button",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                          inverted={true}
-                                          onClick={[Function]}
-                                        >
-                                          <button
-                                            className="sc-bdVaJa egadog sc-htpNat ixxrhM"
-                                            onClick={[Function]}
-                                          >
-                                            Add to cart
-                                          </button>
-                                        </StyledComponent>
-                                      </styled.button>
-                                    </CustomButton>
-                                  </StyledComponent>
-                                </AddButtonStyles>
-                              </div>
-                            </StyledComponent>
-                          </CollectionItemStyles>
-                        </CollectionItem>
-                      </withRouter(CollectionItem)>
-                    </Connect(withRouter(CollectionItem))>
-                  </div>
-                </StyledComponent>
-              </CollectionItemsStyle>
-            </div>
-          </StyledComponent>
+                                  Add to cart
+                                </button>
+                              </styled.button>
+                            </CustomButton>
+                          </AddButtonStyles>
+                        </div>
+                      </CollectionItemStyles>
+                    </CollectionItem>
+                  </withRouter(CollectionItem)>
+                </Connect(withRouter(CollectionItem))>
+              </div>
+            </CollectionItemsStyle>
+          </div>
         </styled.div>
       </CollectionPage>
     </Router>

@@ -59,149 +59,46 @@ exports[`ShopPage should render ShopPage component 1`] = `
         }
       >
         <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htpNat",
-                  "isStatic": false,
-                  "lastClassName": "gDPqZm",
-                  "rules": Array [
-                    "
-    width: 100%;
-",
-                  ],
-                },
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htpNat",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <div
+            className="sc-dlfnuX glBeJf"
           >
-            <div
-              className="sc-htpNat gDPqZm"
+            <Suspense
+              fallback={<Spinner />}
             >
-              <Suspense
-                fallback={<Spinner />}
-              >
-                <Route
-                  component={
-                    Object {
-                      "$$typeof": Symbol(react.lazy),
-                      "_init": [Function],
-                      "_payload": Object {
-                        "_result": Object {
-                          "$$typeof": Symbol(react.memo),
-                          "WrappedComponent": [Function],
-                          "compare": null,
-                          "type": [Function],
-                        },
-                        "_status": 1,
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.lazy),
+                    "_init": [Function],
+                    "_payload": Object {
+                      "_result": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "WrappedComponent": [Function],
+                        "compare": null,
+                        "type": [Function],
                       },
-                    }
+                      "_status": 1,
+                    },
                   }
-                  exact={true}
-                  path=""
-                />
-                <Spinner>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "heFmpq",
-                            "rules": Array [
-                              "
-    height: 60vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-",
-                            ],
-                          },
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
+                }
+                exact={true}
+                path=""
+              />
+              <Spinner>
+                <styled.div>
+                  <div
+                    className="sc-bdfBQB dICxcd"
+                  >
+                    <styled.div>
                       <div
-                        className="sc-bdVaJa heFmpq"
-                      >
-                        <styled.div>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bwzfXH",
-                                  "isStatic": false,
-                                  "lastClassName": "buAkZs",
-                                  "rules": Array [
-                                    "
-    display: inline-block;
-    width: 3.125rem;
-    height: 3.125re,;
-    border: 0.188rem solid rgba(195, 195, 195, 0.6);
-    border-radius: 50%;
-    border-top-color: #636767;
-    animation: spin 1s ease-in-out infinite;
-    -webkit-animation: spin 1s ease-in-out infinite;
-
-    @keyframes spin {
-        to {
-            -webkit-transform: rotate(360deg);
-        }
-    }
-    @-webkit-keyframes spin {
-        to {
-            -webkit-transform: rotate(360deg);
-        }
-    }
-",
-                                  ],
-                                },
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bwzfXH",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <div
-                              className="sc-bwzfXH buAkZs"
-                            />
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Spinner>
-              </Suspense>
-            </div>
-          </StyledComponent>
+                        className="sc-gsTEea gNVMLA"
+                      />
+                    </styled.div>
+                  </div>
+                </styled.div>
+              </Spinner>
+            </Suspense>
+          </div>
         </styled.div>
       </ShopPage>
     </Provider>

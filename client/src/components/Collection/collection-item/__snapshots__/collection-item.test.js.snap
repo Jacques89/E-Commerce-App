@@ -48,7 +48,7 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
       >
         <CollectionItemStyles>
           <div
-            className="sc-gsTEea gpvzcy"
+            className="sc-gsDKAQ PwpgW"
           >
             <BackgroundImageStyles
               className="image"
@@ -56,24 +56,24 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
               onClick={[Function]}
             >
               <div
-                className="sc-hKgJUU jcasNB image"
+                className="sc-hKwDye iVkxVR image"
                 onClick={[Function]}
               />
             </BackgroundImageStyles>
             <CollectionFooterStyles>
               <div
-                className="sc-eCstlR hXZTWx"
+                className="sc-eCImPb fjuBuk"
               >
                 <NameSpanStyles>
                   <span
-                    className="sc-jSgvzq cpdSLY"
+                    className="sc-jRQBWg jYbnoe"
                   >
                     blackCDJ
                   </span>
                 </NameSpanStyles>
                 <PriceSpanStyles>
                   <span
-                    className="sc-gKseQn edKNxZ"
+                    className="sc-gKclnd qCbVL"
                   >
                     10
                     €
@@ -86,17 +86,17 @@ exports[`CollectionItem component should render CollectionItem component 1`] = `
               onClick={[Function]}
             >
               <CustomButton
-                className="sc-dlfnuX eznRbH"
+                className="sc-dkPtRN ffVPcf"
                 inverted={true}
                 onClick={[Function]}
               >
                 <styled.button
-                  className="sc-dlfnuX eznRbH"
+                  className="sc-dkPtRN ffVPcf"
                   inverted={true}
                   onClick={[Function]}
                 >
                   <button
-                    className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
+                    className="sc-bdvvtL gHgxlW sc-dkPtRN ffVPcf"
                     onClick={[Function]}
                   >
                     Add to cart

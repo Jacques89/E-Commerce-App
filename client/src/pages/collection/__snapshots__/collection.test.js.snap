@@ -56,18 +56,18 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
       >
         <styled.div>
           <div
-            className="sc-iBPTik jLHUJN"
+            className="sc-iCfMLu iUIDpy"
           >
             <styled.h2>
               <h2
-                className="sc-fubCzh kggWwV"
+                className="sc-furwcr gSNXgA"
               >
                 Test
               </h2>
             </styled.h2>
             <CollectionItemsStyle>
               <div
-                className="sc-pGacB dCTXWU"
+                className="sc-pVTFL cvqyrF"
               >
                 <Connect(withRouter(CollectionItem))
                   item={
@@ -131,29 +131,29 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                     >
                       <CollectionItemStyles>
                         <div
-                          className="sc-gsTEea gpvzcy"
+                          className="sc-gsDKAQ PwpgW"
                         >
                           <BackgroundImageStyles
                             className="image"
                             onClick={[Function]}
                           >
                             <div
-                              className="sc-hKgJUU katQCk image"
+                              className="sc-hKwDye CtBuA image"
                               onClick={[Function]}
                             />
                           </BackgroundImageStyles>
                           <CollectionFooterStyles>
                             <div
-                              className="sc-eCstlR hXZTWx"
+                              className="sc-eCImPb fjuBuk"
                             >
                               <NameSpanStyles>
                                 <span
-                                  className="sc-jSgvzq cpdSLY"
+                                  className="sc-jRQBWg jYbnoe"
                                 />
                               </NameSpanStyles>
                               <PriceSpanStyles>
                                 <span
-                                  className="sc-gKseQn edKNxZ"
+                                  className="sc-gKclnd qCbVL"
                                 >
                                   €
                                 </span>
@@ -165,17 +165,17 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                             onClick={[Function]}
                           >
                             <CustomButton
-                              className="sc-dlfnuX eznRbH"
+                              className="sc-dkPtRN ffVPcf"
                               inverted={true}
                               onClick={[Function]}
                             >
                               <styled.button
-                                className="sc-dlfnuX eznRbH"
+                                className="sc-dkPtRN ffVPcf"
                                 inverted={true}
                                 onClick={[Function]}
                               >
                                 <button
-                                  className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
+                                  className="sc-bdvvtL gHgxlW sc-dkPtRN ffVPcf"
                                   onClick={[Function]}
                                 >
                                   Add to cart
@@ -250,29 +250,29 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                     >
                       <CollectionItemStyles>
                         <div
-                          className="sc-gsTEea gpvzcy"
+                          className="sc-gsDKAQ PwpgW"
                         >
                           <BackgroundImageStyles
                             className="image"
                             onClick={[Function]}
                           >
                             <div
-                              className="sc-hKgJUU katQCk image"
+                              className="sc-hKwDye CtBuA image"
                               onClick={[Function]}
                             />
                           </BackgroundImageStyles>
                           <CollectionFooterStyles>
                             <div
-                              className="sc-eCstlR hXZTWx"
+                              className="sc-eCImPb fjuBuk"
                             >
                               <NameSpanStyles>
                                 <span
-                                  className="sc-jSgvzq cpdSLY"
+                                  className="sc-jRQBWg jYbnoe"
                                 />
                               </NameSpanStyles>
                               <PriceSpanStyles>
                                 <span
-                                  className="sc-gKseQn edKNxZ"
+                                  className="sc-gKclnd qCbVL"
                                 >
                                   €
                                 </span>
@@ -284,17 +284,17 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                             onClick={[Function]}
                           >
                             <CustomButton
-                              className="sc-dlfnuX eznRbH"
+                              className="sc-dkPtRN ffVPcf"
                               inverted={true}
                               onClick={[Function]}
                             >
                               <styled.button
-                                className="sc-dlfnuX eznRbH"
+                                className="sc-dkPtRN ffVPcf"
                                 inverted={true}
                                 onClick={[Function]}
                               >
                                 <button
-                                  className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
+                                  className="sc-bdvvtL gHgxlW sc-dkPtRN ffVPcf"
                                   onClick={[Function]}
                                 >
                                   Add to cart
@@ -369,29 +369,29 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                     >
                       <CollectionItemStyles>
                         <div
-                          className="sc-gsTEea gpvzcy"
+                          className="sc-gsDKAQ PwpgW"
                         >
                           <BackgroundImageStyles
                             className="image"
                             onClick={[Function]}
                           >
                             <div
-                              className="sc-hKgJUU katQCk image"
+                              className="sc-hKwDye CtBuA image"
                               onClick={[Function]}
                             />
                           </BackgroundImageStyles>
                           <CollectionFooterStyles>
                             <div
-                              className="sc-eCstlR hXZTWx"
+                              className="sc-eCImPb fjuBuk"
                             >
                               <NameSpanStyles>
                                 <span
-                                  className="sc-jSgvzq cpdSLY"
+                                  className="sc-jRQBWg jYbnoe"
                                 />
                               </NameSpanStyles>
                               <PriceSpanStyles>
                                 <span
-                                  className="sc-gKseQn edKNxZ"
+                                  className="sc-gKclnd qCbVL"
                                 >
                                   €
                                 </span>
@@ -403,17 +403,17 @@ exports[`CollectionPage should render the CollectionPage component 1`] = `
                             onClick={[Function]}
                           >
                             <CustomButton
-                              className="sc-dlfnuX eznRbH"
+                              className="sc-dkPtRN ffVPcf"
                               inverted={true}
                               onClick={[Function]}
                             >
                               <styled.button
-                                className="sc-dlfnuX eznRbH"
+                                className="sc-dkPtRN ffVPcf"
                                 inverted={true}
                                 onClick={[Function]}
                               >
                                 <button
-                                  className="sc-bdfBQB doWsIP sc-dlfnuX eznRbH"
+                                  className="sc-bdvvtL gHgxlW sc-dkPtRN ffVPcf"
                                   onClick={[Function]}
                                 >
                                   Add to cart

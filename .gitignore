@@ -16,6 +16,9 @@
 /client/.env.development.local
 /client/.env.test.local
 /client/.env.production.local
+cypress.json
+cypress.env.json
+serviceAccount.json
  
 .env
 .env.local

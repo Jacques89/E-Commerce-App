@@ -27,6 +27,9 @@
         "sweetalert": "^2.1.2"
     },
     "devDependencies": {
-        "concurrently": "^6.2.0"
+        "concurrently": "^6.2.0",
+        "cypress": "^8.7.0",
+        "cypress-firebase": "^2.0.0",
+        "firebase-admin": "^10.0.0"
     }
 }

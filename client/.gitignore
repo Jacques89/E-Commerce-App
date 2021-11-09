@@ -3,3 +3,5 @@ firestore.rules
 firestore.indexes.json
 .firebaserc
 firebase.json
+serviceAccount.json
+cypress.env.json

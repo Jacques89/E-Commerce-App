@@ -8,14 +8,14 @@ import 'firebase/firestore'
 import { attachCustomCommands } from 'cypress-firebase'
 
 const fbConfig = {
-  apiKey: "AIzaSyBJbKVWjAHHlMbSzX3Ivj_9V1oy31FEY1U",
-  authDomain: "e-commerce-store-db-a3b29.firebaseapp.com",
-  databaseURL: "https://e-commerce-store-db-a3b29.firebaseio.com",
-  projectId: "e-commerce-store-db-a3b29",
-  storageBucket: "e-commerce-store-db-a3b29.appspot.com",
-  messagingSenderId: "661424246453",
-  appId: "1:661424246453:web:f0d32016ec8e9e3b9ff8fc",
-  measurementId: "G-FCV5K7Z0H5"
+    apiKey: `${process.env.REACT_APP_API_KEY}`,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
 }
 
 firebase.initializeApp(fbConfig)

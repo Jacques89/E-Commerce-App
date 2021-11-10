@@ -1,20 +1,23 @@
-// ***********************************************************
-// This example support/index.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
-
-// Import commands.js using ES2015 syntax:
 import './commands'
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore'
+import 'firebase/auth'
+import 'firebase/database'
+import 'firebase/firestore'
+import { attachCustomCommands } from 'cypress-firebase'
+
+const fbConfig = {
+  apiKey: "AIzaSyBJbKVWjAHHlMbSzX3Ivj_9V1oy31FEY1U",
+  authDomain: "e-commerce-store-db-a3b29.firebaseapp.com",
+  databaseURL: "https://e-commerce-store-db-a3b29.firebaseio.com",
+  projectId: "e-commerce-store-db-a3b29",
+  storageBucket: "e-commerce-store-db-a3b29.appspot.com",
+  messagingSenderId: "661424246453",
+  appId: "1:661424246453:web:f0d32016ec8e9e3b9ff8fc",
+  measurementId: "G-FCV5K7Z0H5"
+}
+
+firebase.initializeApp(fbConfig)
+
+attachCustomCommands({ Cypress, cy, firebase })

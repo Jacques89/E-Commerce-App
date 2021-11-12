@@ -23,3 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Write test collection in database
+Cypress.Commands.add('createTestCollectionDb', () => {
+    cy.callFirestore('add', 'test_collections', { some: 'value' })
+})

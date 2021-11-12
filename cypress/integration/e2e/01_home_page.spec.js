@@ -1,16 +1,19 @@
+/**
+ * Homepage tests
+ */
+
 describe('Homepage', () => {
-    it('successfully visits website', () => {
-        cy.visit('http://localhost:3000')
+    it('successfully loads the page', () => {
+        cy.visit('/')
     })
     describe('Menu Items', () => {
-        it('displays 5 menu categories', () => {
+        it('displays 5 categories with correct information from the state', () => {
             cy.window()
                 .its('store')
                 .invoke('getState')
                 .then((state) => {
                     const directory = state.directory.sections
-                    expect(directory).to.be.an('array')
-                    expect(directory).to.have.length(5)
+                    expect(directory).to.be.an('array').and.to.have.length(5)
                     cy.fixture('menuItems')
                         .as('menuItem')
                         .then((menuItem) => {
@@ -41,6 +44,46 @@ describe('Homepage', () => {
                             expect(menuItem[4].id).equal(directory[4].id)
                         })
                 })
+        })
+        it('can navigate to each menu item page', () => {
+            // Turntables
+            cy.get('[data-cy=menu-item-shop-button]').eq(0).click()
+            cy.url().should('include', 'shop/turntables')
+            cy.go('back')
+            // CDJS
+            cy.get('[data-cy=menu-item-shop-button]').eq(1).click()
+            cy.url().should('include', 'shop/cdj')
+            cy.go('back')
+            // Mixers
+            cy.get('[data-cy=menu-item-shop-button]').eq(2).click()
+            cy.url().should('include', 'shop/mixers')
+            cy.go('back')
+            // Speakers
+            cy.get('[data-cy=menu-item-shop-button]').eq(3).click()
+            cy.url().should('include', 'shop/speakers')
+            cy.go('back')
+            // Vinyl
+            cy.get('[data-cy=menu-item-shop-button]').eq(4).click()
+            cy.url().should('include', 'shop/vinyl')
+            cy.go('back')
+        })
+    })
+    describe('Navigation bar', () => {
+        it('directs to the shop page', () => {
+            cy.get('[data-cy=shop-button]').click()
+            cy.url().should('include', '/shop')
+        })
+        it('directs to the contact page', () => {
+            cy.get('[data-cy=contact-button]').click()
+            cy.url().should('include', '/contact')
+        })
+        it('directs to the sign-in/sign-up page', () => {
+            cy.get('[data-cy=sign-in-button]').click()
+            cy.url().should('include', '/signin')
+        })
+        it('navigates back to homepage', () => {
+            cy.get('[data-cy=logo]').click()
+            cy.url().should('include', '/')
         })
     })
 })

@@ -25,7 +25,7 @@ describe('MenuItem component', () => {
             history: mockHistory,
             linkUrl,
             size,
-            title: 'hats',
+            title: 'turntables',
             imageUrl
         }
 

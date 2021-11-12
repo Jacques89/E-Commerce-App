@@ -16,19 +16,25 @@ import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './
 export const Header = ({ currentUser, hidden, signOutStart }) => (
     <HeaderContainer>
         <LogoContainer to='/'>
-            <Logo className='logo' />
+            <Logo data-cy='logo' className='logo' />
         </LogoContainer>
         <OptionsContainer>
-            <OptionLink to='/shop'>SHOP</OptionLink>
-            <OptionLink to='/contact'>CONTACT</OptionLink>
+            <OptionLink data-cy='shop-button' to='/shop'>
+                SHOP
+            </OptionLink>
+            <OptionLink data-cy='contact-button' to='/contact'>
+                CONTACT
+            </OptionLink>
             {currentUser ? (
-                <OptionLink to='/#' as='div' onClick={signOutStart}>
+                <OptionLink data-cy='sign-out-button' to='/#' as='div' onClick={signOutStart}>
                     SIGN OUT
                 </OptionLink>
             ) : (
-                <OptionLink to='/signin'>SIGN IN</OptionLink>
+                <OptionLink data-cy='sign-in-button' to='/signin'>
+                    SIGN IN
+                </OptionLink>
             )}
-            <CartIcon />
+            <CartIcon data-cy='cart-icon' />
         </OptionsContainer>
         {hidden ? null : <CartDropdown />}
     </HeaderContainer>

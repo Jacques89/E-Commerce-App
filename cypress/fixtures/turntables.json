@@ -1,0 +1,56 @@
+[
+	{
+		"id": 1,
+		"imageUrl": "https://i.ibb.co/kXKydD8/pearl-turn.png",
+		"name": "Pearl Turntable",
+		"price": 25
+	},
+	{
+		"id": 2,
+		"imageUrl": "https://i.ibb.co/gF5c1cr/cream-turntable.png",
+		"name": "Cream Turntable",
+		"price": 18
+	},
+	{
+		"id": 3,
+		"imageUrl": "https://i.ibb.co/VMWFQrf/white-turntable.png",
+		"name": "White Turntable",
+		"price": 35
+	},
+	{
+		"id": 4,
+		"imageUrl": "https://i.ibb.co/2szkkcr/wood-turntable.png",
+		"name": "Wood Turntable",
+		"price": 25
+	},
+	{
+		"id": 5,
+		"imageUrl": "https://i.ibb.co/DzLdWXw/blueblackturn.png",
+		"name": "Velvet Turntable",
+		"price": 18
+	},
+	{
+		"id": 6,
+		"imageUrl": "https://i.ibb.co/YZ2PNSd/brown-turntable.png",
+		"name": "Brown Turntable",
+		"price": 14
+	},
+	{
+		"id": 7,
+		"imageUrl": "https://i.ibb.co/P5hbW4v/case-turntable.png",
+		"name": "Metallic Turntable",
+		"price": 18
+	},
+	{
+		"id": 8,
+		"imageUrl": "https://i.ibb.co/Hhy5XVj/turquoise-turntable.png",
+		"name": "Turquoise Turntable",
+		"price": 14
+	},
+	{
+		"id": 9,
+		"imageUrl": "https://i.ibb.co/MDVfgLJ/granite-turntable.png",
+		"name": "Granite Turntable",
+		"price": 16
+	}
+]

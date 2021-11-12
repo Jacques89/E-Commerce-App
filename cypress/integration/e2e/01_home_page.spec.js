@@ -3,6 +3,9 @@
  */
 
 describe('Homepage', () => {
+    beforeEach(() => {
+        cy.intercept({ url: /https:\/\/.*google.*/, method: 'POST' }).as('dataFetch')
+    })
     it('successfully loads the page', () => {
         cy.visit('/')
     })
@@ -12,7 +15,7 @@ describe('Homepage', () => {
                 .its('store')
                 .invoke('getState')
                 .then((state) => {
-                    const directory = state.directory.sections
+                    const directory = state.directory?.sections
                     expect(directory).to.be.an('array').and.to.have.length(5)
                     cy.fixture('menuItems')
                         .as('menuItem')
@@ -48,22 +51,27 @@ describe('Homepage', () => {
         it('can navigate to each menu item page', () => {
             // Turntables
             cy.get('[data-cy=menu-item-shop-button]').eq(0).click()
+            cy.wait('@dataFetch')
             cy.url().should('include', 'shop/turntables')
             cy.go('back')
             // CDJS
             cy.get('[data-cy=menu-item-shop-button]').eq(1).click()
+            cy.wait('@dataFetch')
             cy.url().should('include', 'shop/cdj')
             cy.go('back')
             // Mixers
             cy.get('[data-cy=menu-item-shop-button]').eq(2).click()
+            cy.wait('@dataFetch')
             cy.url().should('include', 'shop/mixers')
             cy.go('back')
             // Speakers
             cy.get('[data-cy=menu-item-shop-button]').eq(3).click()
+            cy.wait('@dataFetch')
             cy.url().should('include', 'shop/speakers')
             cy.go('back')
             // Vinyl
             cy.get('[data-cy=menu-item-shop-button]').eq(4).click()
+            cy.wait('@dataFetch')
             cy.url().should('include', 'shop/vinyl')
             cy.go('back')
         })
@@ -71,6 +79,7 @@ describe('Homepage', () => {
     describe('Navigation bar', () => {
         it('directs to the shop page', () => {
             cy.get('[data-cy=shop-button]').click()
+            cy.wait('@dataFetch')
             cy.url().should('include', '/shop')
         })
         it('directs to the contact page', () => {

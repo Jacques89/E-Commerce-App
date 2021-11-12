@@ -1,0 +1,33 @@
+[
+  {
+    "id": 18,
+    "imageUrl": "https://i.ibb.co/vkjL8BR/krys-amon-ttv1p-X6tk7o-unsplash.jpg",
+    "name": "Black CDJ",
+    "price": 125
+  },
+  {
+    "id": 19,
+    "imageUrl": "https://i.ibb.co/CQz55Qv/pioneer-cdj-1000-close-up-technology-wallpaper-preview.jpg",
+    "name": "Silver CDJ",
+    "price": 90
+  },
+  {
+    "id": 20,
+    "imageUrl": "https://i.ibb.co/1n7Sz60/Midnight-CDJ.png",
+    "name": "Midnight CDJ",
+    "price": 90
+  },
+  {
+    "id": 21,
+    "imageUrl": "https://i.ibb.co/Bq1qk6r/DSC06890.jpg",
+    "name": "White CDJ",
+    "price": 165
+  },
+  {
+    "id": 22,
+    "imageUrl": "https://i.ibb.co/9qTSxFc/Granite-cdj.png",
+    "name": "Granite CDJ",
+    "price": 185
+  }
+
+]

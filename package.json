@@ -21,7 +21,7 @@
         "express": "^4.17.1",
         "express-sslify": "^1.2.0",
         "lodash.memoize": "^4.1.2",
-        "nodemon": "^2.0.12",
+        "nodemon": "^2.0.20",
         "react-router": "^5.2.0",
         "stripe": "^8.167.0",
         "sweetalert": "^2.1.2"
